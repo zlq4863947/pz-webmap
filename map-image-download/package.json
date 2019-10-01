@@ -1,0 +1,31 @@
+{
+  "name": "map-image-download",
+  "version": "1.0.0",
+  "description": "僵尸毁灭工程地图项目-地图图片下载",
+  "main": "index.js",
+  "scripts": {
+    "format": "yarn format:ts && yarn format:md",
+    "format:md": "prettier --config .prettierrc --write \"./README*.md\" --parser markdown",
+    "format:ts": "yarn format:ts:import && prettier --config .prettierrc --write \"src/**/*.ts\"",
+    "format:ts:import": "import-sort --write \"src/**/*.ts\"",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts"
+  },
+  "keywords": [
+    "僵尸毁灭工程地图项目-地图图片下载"
+  ],
+  "author": "zkq4863947@gmail.com",
+  "dependencies": {
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.9",
+    "import-sort": "^6.0.0",
+    "import-sort-cli": "^6.0.0",
+    "import-sort-parser-typescript": "^6.0.0",
+    "import-sort-style-module-alias": "^1.0.4",
+    "prettier": "^1.18.2"
+  },
+  "license": "ISC"
+}

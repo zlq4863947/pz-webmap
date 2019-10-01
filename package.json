@@ -1,0 +1,17 @@
+{
+  "name": "pz-webmap",
+  "version": "1.0.0",
+  "description": "僵尸毁灭工程地图项目",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [
+    "僵尸毁灭工程地图项目"
+  ],
+  "author": "zlq4863947@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

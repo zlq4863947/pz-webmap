@@ -1,0 +1,141 @@
+#btnLicense {
+	padding-bottom: 0px !important;
+}
+.btn {
+	padding: 0px !important;
+}
+.highlight {
+}
+.main {
+	padding: 0px;
+}
+ul.nav {
+	padding-left: 0px;
+}
+.sidebar {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.sidebar .panel > .panel-heading {
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.sidebar > .panel-group .panel + .panel {
+	margin-top: 0px;
+}
+.sidebar > ul.nav {
+	padding-left: 0px;
+}
+.nav > li > a {
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.navbar-nav > li > select, .navbar-nav > li > button {
+	line-height: 20px;
+	margin-top: 15px;
+}
+.offsetlarge {
+	margin-left: -15px;
+	margin-top: -15px;
+}
+.offsetmedium {
+	margin-left: -10px;
+	margin-top: -10px;
+}
+.offsetsmall {
+	margin-left: -5px;
+	margin-top: -5px;
+}
+.nav > li.onlywhenactive {
+	display: none;
+}
+.nav > li.active {
+	display: block !important;
+}
+.onlywhenactive {
+	display: none;
+}
+.active .onlywhenactive {
+	display: block !important;
+}
+.private {
+}
+.tooltip p {
+	background-color: #fff;
+	height: 100%;
+	margin-bottom: 0;
+	font-size: 24;
+}
+.tooltip {
+	display: none;
+	width: 250px;
+	background-color: #252525;
+	padding: 5px;
+	z-index: 999;
+}
+.tooltip, .tooltip p {
+	border-radius: 20px;
+}
+.w100 {
+	width: 100%;
+}
+/*div.socialshareprivacy {
+	margin: 1ex;
+	position: absolute;
+	bottom: 80px;
+	left: 0px;
+}*/
+body {
+	background-color: #000000;
+	margin: 0;
+}
+div#map {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+div#nextupdate {
+	color: #FF0000;
+	margin: 1ex;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+div.addPOI {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	top: 0;
+	left: 0;
+}
+div.menu {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+div.overlay a {
+		color: #808080;
+		text-decoration: underline;
+}
+div.overlay {
+	color: #808080;
+	font-size: small;
+	margin: 1ex;
+	position: absolute;
+	bottom: 0px;
+}
+html {
+	min-height: 100%;
+	position: relative;
+}
+p {
+	padding: 0 1.5em;
+}
