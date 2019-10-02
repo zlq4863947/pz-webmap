@@ -7,12 +7,12 @@
   "areas": [
     {
       "id": 1,
-      "name": "Dixie",
+      "name": "迪克西",
       "pois": [
         {
           "id": 1,
           "area_id": 1,
-          "name": "Barg-n-Clothes",
+          "name": "Barg-n-Clothes健身房",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11599,
@@ -26,21 +26,21 @@
         {
           "id": 2,
           "area_id": 1,
-          "name": "Cabin",
+          "name": "小棚屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11243,
           "y": 8953,
           "score": 500,
           "user_id": 1,
-          "comment": "Do you really want to be alone in the woods now? Without a well?",
+          "comment": "您真的想现在一个人在树林里吗？ 没有井的那种？",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 3,
           "area_id": 1,
-          "name": "Diner",
+          "name": "小餐馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11464,
@@ -54,7 +54,7 @@
         {
           "id": 4,
           "area_id": 1,
-          "name": "Gas station",
+          "name": "加油站",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11508,
@@ -68,7 +68,7 @@
         {
           "id": 5,
           "area_id": 1,
-          "name": "Gas-2-Go",
+          "name": "Gas-2-Go加油超市",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11603,
@@ -82,7 +82,7 @@
         {
           "id": 6,
           "area_id": 1,
-          "name": "Picnic dining area",
+          "name": "野餐用餐区",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11556,
@@ -96,7 +96,7 @@
         {
           "id": 7,
           "area_id": 1,
-          "name": "Spiffo's",
+          "name": "Spiffo浣熊餐厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11668,
@@ -110,7 +110,7 @@
         {
           "id": 8,
           "area_id": 1,
-          "name": "Supermarket",
+          "name": "超市",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11670,
@@ -124,7 +124,7 @@
         {
           "id": 9,
           "area_id": 1,
-          "name": "Trailer Park",
+          "name": "拖车公园",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11493,
@@ -138,49 +138,49 @@
         {
           "id": 867,
           "area_id": 1,
-          "name": "Molan's Used Cars",
+          "name": "莫兰的二手车",
           "created_at": "2017-12-20T18:26:38.389Z",
           "updated_at": "2018-05-11T11:11:44.549Z",
           "x": 11687,
           "y": 8367,
           "score": 20,
           "user_id": 168,
-          "comment": "Clean them just to be sure",
+          "comment": "以防万一把它们清理干净",
           "approver_id": 2,
           "approved_at": "2018-05-11T11:11:44.549Z"
         },
         {
           "id": 913,
           "area_id": 1,
-          "name": "Farming and Rural Supplies",
+          "name": "农场以及农业用品",
           "created_at": "2018-07-07T11:43:50.277Z",
           "updated_at": "2018-10-10T11:05:36.801Z",
           "x": 7252,
           "y": 8321,
           "score": 0,
           "user_id": 199,
-          "comment": "Seeds etc., some general hardware, plus guns in the back room.",
+          "comment": "种子等，一些通用硬件，加上后面房间的枪。",
           "approver_id": 2,
           "approved_at": "2018-10-10T11:05:36.797Z"
         },
         {
           "id": 914,
           "area_id": 1,
-          "name": "General Store",
+          "name": "杂货店",
           "created_at": "2018-07-07T11:45:05.327Z",
           "updated_at": "2018-10-10T11:05:52.256Z",
           "x": 7296,
           "y": 8253,
           "score": 0,
           "user_id": 199,
-          "comment": "Lots of food and some clothes",
+          "comment": "很多食物和一些衣服",
           "approver_id": 2,
           "approved_at": "2018-10-10T11:05:52.255Z"
         },
         {
           "id": 917,
           "area_id": 1,
-          "name": "Doctor's Office",
+          "name": "医生办公室",
           "created_at": "2018-07-07T11:46:30.036Z",
           "updated_at": "2018-10-04T09:25:05.892Z",
           "x": 7296,
@@ -194,7 +194,7 @@
         {
           "id": 918,
           "area_id": 1,
-          "name": "Police Station",
+          "name": "警察局",
           "created_at": "2018-07-07T11:47:16.132Z",
           "updated_at": "2018-10-10T11:05:17.571Z",
           "x": 7252,
@@ -208,21 +208,21 @@
         {
           "id": 919,
           "area_id": 1,
-          "name": "E.P. Tools",
+          "name": "E.P. 工具店",
           "created_at": "2018-07-07T11:48:21.174Z",
           "updated_at": "2018-10-10T11:04:31.685Z",
           "x": 7256,
           "y": 8231,
           "score": 10,
           "user_id": 199,
-          "comment": "Hardware shop",
+          "comment": "五金店",
           "approver_id": 2,
           "approved_at": "2018-10-10T11:04:31.685Z"
         },
         {
           "id": 920,
           "area_id": 1,
-          "name": "Burger joint",
+          "name": "汉堡店",
           "created_at": "2018-07-07T11:48:39.207Z",
           "updated_at": "2018-10-04T09:24:25.768Z",
           "x": 7234,
@@ -236,7 +236,7 @@
         {
           "id": 922,
           "area_id": 1,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2018-07-07T11:52:23.127Z",
           "updated_at": "2018-10-04T09:24:51.003Z",
           "x": 7387,
@@ -250,7 +250,7 @@
         {
           "id": 923,
           "area_id": 1,
-          "name": "Bookshop",
+          "name": "书店",
           "created_at": "2018-07-07T11:52:56.825Z",
           "updated_at": "2018-10-04T09:24:06.605Z",
           "x": 7258,
@@ -264,7 +264,7 @@
         {
           "id": 925,
           "area_id": 1,
-          "name": "Bar",
+          "name": "酒吧",
           "created_at": "2018-07-07T11:53:37.344Z",
           "updated_at": "2018-10-04T09:24:00.581Z",
           "x": 7246,
@@ -278,7 +278,7 @@
         {
           "id": 927,
           "area_id": 1,
-          "name": "Double warehouse",
+          "name": "双层仓库",
           "created_at": "2018-07-07T11:55:26.875Z",
           "updated_at": "2018-10-04T09:25:29.182Z",
           "x": 7657,
@@ -292,7 +292,7 @@
         {
           "id": 928,
           "area_id": 1,
-          "name": "Double small warehouses",
+          "name": "双层小型仓库",
           "created_at": "2018-07-07T11:55:59.827Z",
           "updated_at": "2018-10-04T09:25:17.364Z",
           "x": 6560,
@@ -306,7 +306,7 @@
         {
           "id": 930,
           "area_id": 1,
-          "name": "Double small warehouses",
+          "name": "双层小型仓库",
           "created_at": "2018-07-07T11:56:51.919Z",
           "updated_at": "2018-10-04T09:25:16.984Z",
           "x": 5892,
@@ -320,7 +320,7 @@
         {
           "id": 931,
           "area_id": 1,
-          "name": "Gas station",
+          "name": "加油站",
           "created_at": "2018-07-07T11:57:17.300Z",
           "updated_at": "2018-10-10T11:05:41.513Z",
           "x": 5467,
@@ -334,7 +334,7 @@
         {
           "id": 933,
           "area_id": 1,
-          "name": "Auto repair shop",
+          "name": "汽车维修店",
           "created_at": "2018-07-07T11:57:55.366Z",
           "updated_at": "2018-10-04T09:23:53.693Z",
           "x": 5470,
@@ -348,21 +348,21 @@
         {
           "id": 935,
           "area_id": 1,
-          "name": "Farm produce shop",
+          "name": "农产品商店",
           "created_at": "2018-07-07T11:59:14.383Z",
           "updated_at": "2018-10-10T11:05:28.789Z",
           "x": 5465,
           "y": 9584,
           "score": 0,
           "user_id": 199,
-          "comment": "With adjoining cafés",
+          "comment": "毗邻咖啡馆",
           "approver_id": 2,
           "approved_at": "2018-10-10T11:05:28.789Z"
         },
         {
           "id": 936,
           "area_id": 1,
-          "name": "Doctor's Office",
+          "name": "医生办公室",
           "created_at": "2018-07-07T11:59:50.565Z",
           "updated_at": "2018-10-04T09:25:05.492Z",
           "x": 5499,
@@ -376,7 +376,7 @@
         {
           "id": 937,
           "area_id": 1,
-          "name": "Clothes store",
+          "name": "服装店",
           "created_at": "2018-07-07T12:00:08.143Z",
           "updated_at": "2018-10-04T09:24:57.603Z",
           "x": 5501,
@@ -390,7 +390,7 @@
         {
           "id": 939,
           "area_id": 1,
-          "name": "Double warehouse",
+          "name": "双层仓库",
           "created_at": "2018-07-07T12:02:06.676Z",
           "updated_at": "2018-10-04T09:25:28.792Z",
           "x": 8279,
@@ -404,7 +404,7 @@
         {
           "id": 999,
           "area_id": 1,
-          "name": "Farming \u0026 Rural Supply",
+          "name": "农场 \u0026 农产品供给",
           "created_at": "2018-10-07T12:01:40.449Z",
           "updated_at": "2018-10-10T11:05:08.572Z",
           "x": 7252,
@@ -420,12 +420,12 @@
     },
     {
       "id": 2,
-      "name": "Muldraugh",
+      "name": "马尔德劳",
       "pois": [
         {
           "id": 10,
           "area_id": 2,
-          "name": "Abandoned cabins",
+          "name": "被遗弃的小屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10969,
@@ -439,7 +439,7 @@
         {
           "id": 11,
           "area_id": 2,
-          "name": "Abandoned restaurant",
+          "name": "被遗弃的餐厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10625,
@@ -453,7 +453,7 @@
         {
           "id": 12,
           "area_id": 2,
-          "name": "Adult Education Center",
+          "name": "成人教育中心",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10638,
@@ -467,7 +467,7 @@
         {
           "id": 13,
           "area_id": 2,
-          "name": "All you can eat buffet",
+          "name": "随你吃自助餐",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10619,
@@ -481,7 +481,7 @@
         {
           "id": 14,
           "area_id": 2,
-          "name": "Baseball field",
+          "name": "棒球场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10955,
@@ -495,7 +495,7 @@
         {
           "id": 15,
           "area_id": 2,
-          "name": "Big urban warehouse",
+          "name": "大城市仓库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10694,
@@ -509,7 +509,7 @@
         {
           "id": 16,
           "area_id": 2,
-          "name": "Burger and Laundromat",
+          "name": "汉堡和自助洗衣店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10606,
@@ -523,21 +523,21 @@
         {
           "id": 17,
           "area_id": 2,
-          "name": "Cabin in the western woods",
+          "name": "西方森林的小屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 9664,
           "y": 8773,
           "score": 500,
           "user_id": 1,
-          "comment": "Do you really want to be alone in the woods now?\nHas a well.",
+          "comment": "您真的想现在一个人在树林里吗？\n有一口井。",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 18,
           "area_id": 2,
-          "name": "Car repair shop",
+          "name": "汽车维修店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10605,
@@ -551,7 +551,7 @@
         {
           "id": 19,
           "area_id": 2,
-          "name": "Chapel",
+          "name": "教堂",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10723,
@@ -565,7 +565,7 @@
         {
           "id": 20,
           "area_id": 2,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10773,
@@ -579,7 +579,7 @@
         {
           "id": 21,
           "area_id": 2,
-          "name": "Construction Site",
+          "name": "工地",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10061,
@@ -593,7 +593,7 @@
         {
           "id": 22,
           "area_id": 2,
-          "name": "Convenience Store",
+          "name": "便利店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10838,
@@ -607,7 +607,7 @@
         {
           "id": 23,
           "area_id": 2,
-          "name": "Cortman Medical",
+          "name": "科特曼医疗",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10876,
@@ -621,7 +621,7 @@
         {
           "id": 24,
           "area_id": 2,
-          "name": "Diner",
+          "name": "小餐馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10614,
@@ -635,7 +635,7 @@
         {
           "id": 25,
           "area_id": 2,
-          "name": "Electronics Store",
+          "name": "电器商店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10614,
@@ -649,35 +649,35 @@
         {
           "id": 26,
           "area_id": 2,
-          "name": "Elementary school",
+          "name": "小学",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10619,
           "y": 9967,
           "score": 500,
           "user_id": 1,
-          "comment": "All those fire drills finally paid off!",
+          "comment": "所有的消防演习终于有了用武之地！",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 27,
           "area_id": 2,
-          "name": "Farm to the west",
+          "name": "西部农场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 8599,
           "y": 8824,
           "score": 500,
           "user_id": 1,
-          "comment": "Has a tool shed, chickencoop and well.",
+          "comment": "有一个工具棚、鸡舍、以及水井",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 28,
           "area_id": 2,
-          "name": "Farmers Market",
+          "name": "农贸市场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10849,
@@ -691,21 +691,21 @@
         {
           "id": 29,
           "area_id": 2,
-          "name": "Forest house",
+          "name": "森林小屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11063,
           "y": 10638,
           "score": 500,
           "user_id": 1,
-          "comment": "Do you really want to be alone in the woods right now? Without a well?",
+          "comment": "您真的想一个人在树林里住吗？ 连水井都没有的地方？",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 30,
           "area_id": 2,
-          "name": "Fossoil gas station",
+          "name": "石油加油站",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10624,
@@ -719,7 +719,7 @@
         {
           "id": 31,
           "area_id": 2,
-          "name": "Garages",
+          "name": "车库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10602,
@@ -733,7 +733,7 @@
         {
           "id": 32,
           "area_id": 2,
-          "name": "Gas-2-Go",
+          "name": "Gas-2-Go汽油超市",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10668,
@@ -747,7 +747,7 @@
         {
           "id": 33,
           "area_id": 2,
-          "name": "Gated community",
+          "name": "门控社区",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10668,
@@ -761,7 +761,7 @@
         {
           "id": 34,
           "area_id": 2,
-          "name": "Greene's Grocery",
+          "name": "格林杂货店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10609,
@@ -775,7 +775,7 @@
         {
           "id": 35,
           "area_id": 2,
-          "name": "H. Smith Attorney",
+          "name": "H.史密斯律师",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10648,
@@ -789,7 +789,7 @@
         {
           "id": 36,
           "area_id": 2,
-          "name": "Isolated Forest House",
+          "name": "孤立的森林住宅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11600,
@@ -803,21 +803,21 @@
         {
           "id": 37,
           "area_id": 2,
-          "name": "Isolated House",
+          "name": "孤立的住宅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10945,
           "y": 9370,
           "score": 500,
           "user_id": 1,
-          "comment": "An isolated house with only 1 way in and out, making it popular stronghold among players because its resource efficent and zombie safe(ish) while being close to the main part of the map.",
+          "comment": "孤立的住宅，只有一种进出方式，因为它的资源效率高且安全，使它成为玩家们的热门据点",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 38,
           "area_id": 2,
-          "name": "Kate and Baldspots safehouse",
+          "name": "凯特和光头斑安全住宅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10746,
@@ -831,7 +831,7 @@
         {
           "id": 39,
           "area_id": 2,
-          "name": "Knox Bank",
+          "name": "诺克斯银行",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10622,
@@ -845,7 +845,7 @@
         {
           "id": 40,
           "area_id": 2,
-          "name": "Laundromat",
+          "name": "自助洗衣房",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10914,
@@ -859,21 +859,21 @@
         {
           "id": 41,
           "area_id": 2,
-          "name": "Lone forest shack",
+          "name": "孤独的森林小屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 9341,
           "y": 10293,
           "score": 500,
           "user_id": 1,
-          "comment": "Do you really want to be alone in the woods right now? Without a well?",
+          "comment": "您真的想现在一个人在树林里吗？ 没有井？",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 42,
           "area_id": 2,
-          "name": "Lumber Mill",
+          "name": "木材厂",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10319,
@@ -887,7 +887,7 @@
         {
           "id": 43,
           "area_id": 2,
-          "name": "Mini mall",
+          "name": "迷你商场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10606,
@@ -901,7 +901,7 @@
         {
           "id": 44,
           "area_id": 2,
-          "name": "Motel",
+          "name": "汽车旅馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10900,
@@ -915,7 +915,7 @@
         {
           "id": 45,
           "area_id": 2,
-          "name": "North Farm",
+          "name": "北方农场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10815,
@@ -929,7 +929,7 @@
         {
           "id": 46,
           "area_id": 2,
-          "name": "Offices",
+          "name": "办公室",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10673,
@@ -943,7 +943,7 @@
         {
           "id": 47,
           "area_id": 2,
-          "name": "Picnic area",
+          "name": "野餐区",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10992,
@@ -957,21 +957,21 @@
         {
           "id": 48,
           "area_id": 2,
-          "name": "Pile-o-Crepe",
+          "name": "Pile-o-Crepe煎饼屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10613,
           "y": 9505,
           "score": 500,
           "user_id": 1,
-          "comment": "Pancake house",
+          "comment": "",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 49,
           "area_id": 2,
-          "name": "Pizza Whirled",
+          "name": "旋转披萨",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10604,
@@ -985,7 +985,7 @@
         {
           "id": 50,
           "area_id": 2,
-          "name": "Police station",
+          "name": "警察局",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10631,
@@ -999,7 +999,7 @@
         {
           "id": 51,
           "area_id": 2,
-          "name": "Pony Roam-O",
+          "name": "小马漫游O",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 8559,
@@ -1013,7 +1013,7 @@
         {
           "id": 52,
           "area_id": 2,
-          "name": "Railyard",
+          "name": "铁路修车场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11655,
@@ -1027,7 +1027,7 @@
         {
           "id": 53,
           "area_id": 2,
-          "name": "Restaurant",
+          "name": "餐厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10619,
@@ -1041,7 +1041,7 @@
         {
           "id": 54,
           "area_id": 2,
-          "name": "Self-Storage buildings",
+          "name": "自储式建筑物",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10684,
@@ -1055,7 +1055,7 @@
         {
           "id": 55,
           "area_id": 2,
-          "name": "Small convenience store",
+          "name": "小型便利店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10836,
@@ -1069,7 +1069,7 @@
         {
           "id": 56,
           "area_id": 2,
-          "name": "Small storage facility",
+          "name": "小型仓储设施",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10752,
@@ -1083,7 +1083,7 @@
         {
           "id": 57,
           "area_id": 2,
-          "name": "Small warehouse",
+          "name": "小仓库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10712,
@@ -1097,7 +1097,7 @@
         {
           "id": 58,
           "area_id": 2,
-          "name": "Spiffo's",
+          "name": "Spiffo浣熊餐厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10621,
@@ -1111,7 +1111,7 @@
         {
           "id": 59,
           "area_id": 2,
-          "name": "Storage building",
+          "name": "仓库建筑",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10627,
@@ -1125,7 +1125,7 @@
         {
           "id": 60,
           "area_id": 2,
-          "name": "Sunstar Hotel",
+          "name": "太阳之星酒店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10628,
@@ -1139,7 +1139,7 @@
         {
           "id": 61,
           "area_id": 2,
-          "name": "Tattoo 42",
+          "name": "Tattoo 42纹身店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10614,
@@ -1153,7 +1153,7 @@
         {
           "id": 62,
           "area_id": 2,
-          "name": "Tavern",
+          "name": "酒馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10758,
@@ -1167,7 +1167,7 @@
         {
           "id": 63,
           "area_id": 2,
-          "name": "The McCoy Logging Corp.",
+          "name": "麦考伊伐木公司",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10317,
@@ -1181,7 +1181,7 @@
         {
           "id": 64,
           "area_id": 2,
-          "name": "The large warehouse",
+          "name": "大型仓库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10611,
@@ -1195,7 +1195,7 @@
         {
           "id": 65,
           "area_id": 2,
-          "name": "Train station",
+          "name": "火车站",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11096,
@@ -1209,7 +1209,7 @@
         {
           "id": 66,
           "area_id": 2,
-          "name": "Warehouses out of town",
+          "name": "城外仓库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10050,
@@ -1223,7 +1223,7 @@
         {
           "id": 67,
           "area_id": 2,
-          "name": "Warehouses",
+          "name": "仓库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10713,
@@ -1237,7 +1237,7 @@
         {
           "id": 68,
           "area_id": 2,
-          "name": "Zippee Market",
+          "name": "Zippee汽车便利店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10604,
@@ -1251,21 +1251,21 @@
         {
           "id": 243,
           "area_id": 2,
-          "name": "Cafeteria",
+          "name": "自助餐馆",
           "created_at": "2015-04-10T12:31:15.000Z",
           "updated_at": "2015-06-17T07:21:59.000Z",
           "x": 10648,
           "y": 9924,
           "score": 27,
           "user_id": 28,
-          "comment": "Free WIFI? Apparently not.",
+          "comment": "免费WiFi？ 显然不是。",
           "approver_id": 2,
           "approved_at": "2015-06-17T07:21:59.000Z"
         },
         {
           "id": 245,
           "area_id": 2,
-          "name": "Soccer Field",
+          "name": "足球场",
           "created_at": "2015-04-10T12:34:03.000Z",
           "updated_at": "2015-06-17T07:22:01.000Z",
           "x": 10656,
@@ -1279,21 +1279,21 @@
         {
           "id": 647,
           "area_id": 2,
-          "name": "Camp Grounds",
+          "name": "露营地",
           "created_at": "2017-05-31T00:38:37.012Z",
           "updated_at": "2017-07-27T12:18:09.446Z",
           "x": 12422,
           "y": 8927,
           "score": 19,
           "user_id": 131,
-          "comment": "A Group of Cabins In The Woods Near Muldraugh",
+          "comment": "一群小屋在穆德洛附近的树林里",
           "approver_id": 2,
           "approved_at": "2017-07-27T12:18:09.440Z"
         },
         {
           "id": 871,
           "area_id": 2,
-          "name": "Bookshop",
+          "name": "书店",
           "created_at": "2018-01-14T19:26:53.923Z",
           "updated_at": "2018-05-11T11:11:50.776Z",
           "x": 10610,
@@ -1307,7 +1307,7 @@
         {
           "id": 872,
           "area_id": 2,
-          "name": "Cross roads",
+          "name": "十字路口",
           "created_at": "2018-02-08T19:37:18.195Z",
           "updated_at": "2018-05-11T11:12:08.958Z",
           "x": 10591,
@@ -1323,12 +1323,12 @@
     },
     {
       "id": 3,
-      "name": "Valley Station",
+      "name": "山谷站",
       "pois": [
         {
           "id": 69,
           "area_id": 3,
-          "name": "Academy",
+          "name": "学院",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12857,
@@ -1342,7 +1342,7 @@
         {
           "id": 70,
           "area_id": 3,
-          "name": "Bridge",
+          "name": "桥",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12309,
@@ -1356,21 +1356,21 @@
         {
           "id": 71,
           "area_id": 3,
-          "name": "Burger shop",
+          "name": "汉堡店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12544,
           "y": 5266,
           "score": 500,
           "user_id": 1,
-          "comment": "100% fresh meat",
+          "comment": "100％鲜肉",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 72,
           "area_id": 3,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12848,
@@ -1384,7 +1384,7 @@
         {
           "id": 73,
           "area_id": 3,
-          "name": "Construction site #2",
+          "name": "工地 #2",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 14123,
@@ -1398,7 +1398,7 @@
         {
           "id": 74,
           "area_id": 3,
-          "name": "Construction site",
+          "name": "工地",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12582,
@@ -1412,7 +1412,7 @@
         {
           "id": 75,
           "area_id": 3,
-          "name": "Destroyed cabin",
+          "name": "被毁的小屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12531,
@@ -1426,7 +1426,7 @@
         {
           "id": 76,
           "area_id": 3,
-          "name": "Diner",
+          "name": "小餐馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12741,
@@ -1440,7 +1440,7 @@
         {
           "id": 77,
           "area_id": 3,
-          "name": "Food Market",
+          "name": "食品市场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12571,
@@ -1454,7 +1454,7 @@
         {
           "id": 78,
           "area_id": 3,
-          "name": "Gas Station",
+          "name": "加油站",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12734,
@@ -1468,7 +1468,7 @@
         {
           "id": 79,
           "area_id": 3,
-          "name": "Gas-2-Go",
+          "name": "Gas-2-Go汽油超市",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13734,
@@ -1482,7 +1482,7 @@
         {
           "id": 80,
           "area_id": 3,
-          "name": "Hunting Cabin",
+          "name": "狩猎小木屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13651,
@@ -1496,7 +1496,7 @@
         {
           "id": 81,
           "area_id": 3,
-          "name": "Hunting Lodge",
+          "name": "狩猎木房",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13105,
@@ -1510,21 +1510,21 @@
         {
           "id": 82,
           "area_id": 3,
-          "name": "Hunting stand",
+          "name": "狩猎场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13403,
           "y": 5338,
           "score": 500,
           "user_id": 1,
-          "comment": "Watch out for bears",
+          "comment": "小心熊出没（熊大或熊二？）",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 83,
           "area_id": 3,
-          "name": "Knox Bank",
+          "name": "诺克斯银行",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13656,
@@ -1538,7 +1538,7 @@
         {
           "id": 84,
           "area_id": 3,
-          "name": "Pile-o-Crepe",
+          "name": "Pile-o-Crepe煎饼屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13602,
@@ -1552,7 +1552,7 @@
         {
           "id": 85,
           "area_id": 3,
-          "name": "Racetrack / Abandoned airfield",
+          "name": "赛马场/废弃的飞机场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12840,
@@ -1566,7 +1566,7 @@
         {
           "id": 86,
           "area_id": 3,
-          "name": "Shooting Range",
+          "name": "靶场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13266,
@@ -1580,7 +1580,7 @@
         {
           "id": 87,
           "area_id": 3,
-          "name": "Small Hotel",
+          "name": "小旅馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13008,
@@ -1594,7 +1594,7 @@
         {
           "id": 88,
           "area_id": 3,
-          "name": "Small dock",
+          "name": "小码头",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12482,
@@ -1608,7 +1608,7 @@
         {
           "id": 89,
           "area_id": 3,
-          "name": "Small shop",
+          "name": "小商店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12627,
@@ -1622,7 +1622,7 @@
         {
           "id": 90,
           "area_id": 3,
-          "name": "StarEplex Cinema",
+          "name": "星空影院",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13629,
@@ -1636,21 +1636,21 @@
         {
           "id": 91,
           "area_id": 3,
-          "name": "The Mall",
+          "name": "商场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13930,
           "y": 5878,
           "score": 500,
           "user_id": 1,
-          "comment": "Beware the Shopping Dead",
+          "comment": "当心购物的死人",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 92,
           "area_id": 3,
-          "name": "Train station",
+          "name": "火车站",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12605,
@@ -1664,7 +1664,7 @@
         {
           "id": 93,
           "area_id": 3,
-          "name": "Zippee market",
+          "name": "Zippee便利店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 13658,
@@ -1678,7 +1678,7 @@
         {
           "id": 212,
           "area_id": 3,
-          "name": "Yummmers",
+          "name": "Yummmers餐厅",
           "created_at": "2015-03-04T08:57:44.000Z",
           "updated_at": "2015-11-19T07:27:26.000Z",
           "x": 13571,
@@ -1692,7 +1692,7 @@
         {
           "id": 213,
           "area_id": 3,
-          "name": "Kindergarten",
+          "name": "幼儿园",
           "created_at": "2015-03-04T08:58:41.000Z",
           "updated_at": "2015-11-19T07:27:27.000Z",
           "x": 13585,
@@ -1706,7 +1706,7 @@
         {
           "id": 214,
           "area_id": 3,
-          "name": "Beauty Salon",
+          "name": "美容院",
           "created_at": "2015-03-04T09:02:27.000Z",
           "updated_at": "2015-03-04T14:12:31.000Z",
           "x": 13619,
@@ -1720,7 +1720,7 @@
         {
           "id": 215,
           "area_id": 3,
-          "name": "Clothing Shop",
+          "name": "服装店",
           "created_at": "2015-03-04T09:05:52.000Z",
           "updated_at": "2015-11-19T07:27:29.000Z",
           "x": 13686,
@@ -1734,7 +1734,7 @@
         {
           "id": 216,
           "area_id": 3,
-          "name": "Insurance Office",
+          "name": "保险办公室",
           "created_at": "2015-03-04T09:06:05.000Z",
           "updated_at": "2015-11-19T07:27:28.000Z",
           "x": 13665,
@@ -1748,7 +1748,7 @@
         {
           "id": 217,
           "area_id": 3,
-          "name": "Restaurant",
+          "name": "餐厅",
           "created_at": "2015-03-04T09:06:17.000Z",
           "updated_at": "2015-11-19T07:27:27.000Z",
           "x": 13649,
@@ -1762,7 +1762,7 @@
         {
           "id": 224,
           "area_id": 3,
-          "name": "Book Store",
+          "name": "书店",
           "created_at": "2015-03-13T20:28:51.000Z",
           "updated_at": "2015-06-17T07:22:52.000Z",
           "x": 13604,
@@ -1776,7 +1776,7 @@
         {
           "id": 225,
           "area_id": 3,
-          "name": "Beauty Salon",
+          "name": "美容院",
           "created_at": "2015-03-13T20:29:14.000Z",
           "updated_at": "2015-06-17T07:22:52.000Z",
           "x": 13620,
@@ -1790,49 +1790,49 @@
         {
           "id": 315,
           "area_id": 3,
-          "name": "House near the lake",
+          "name": "湖边的房子",
           "created_at": "2015-06-05T20:06:51.000Z",
           "updated_at": "2015-06-19T12:46:29.000Z",
           "x": 14059,
           "y": 5199,
           "score": 10,
           "user_id": 41,
-          "comment": "With tool shed and small lake go fishing",
+          "comment": "有工具棚并且可以在湖边钓鱼",
           "approver_id": 2,
           "approved_at": "2015-06-19T12:46:29.000Z"
         },
         {
           "id": 316,
           "area_id": 3,
-          "name": "Small Farm",
+          "name": "小农场",
           "created_at": "2015-06-05T20:10:35.000Z",
           "updated_at": "2015-06-19T12:45:59.000Z",
           "x": 14315,
           "y": 4953,
           "score": 27,
           "user_id": 41,
-          "comment": "With big garden, small tool shed and food stand ",
+          "comment": "有大花园，小工具棚和食品摊",
           "approver_id": 2,
           "approved_at": "2015-06-19T12:45:59.000Z"
         },
         {
           "id": 317,
           "area_id": 3,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2015-06-05T20:12:17.000Z",
           "updated_at": "2015-11-19T07:27:31.000Z",
           "x": 14551,
           "y": 4970,
           "score": 17,
           "user_id": 41,
-          "comment": "Small Church with small tool shed near",
+          "comment": "小教堂附近有小工具棚",
           "approver_id": 2,
           "approved_at": "2015-11-19T07:27:31.000Z"
         },
         {
           "id": 321,
           "area_id": 3,
-          "name": "Medium Warehouse",
+          "name": "中型仓库",
           "created_at": "2015-06-05T20:16:12.000Z",
           "updated_at": "2015-06-19T12:48:31.000Z",
           "x": 12620,
@@ -1846,7 +1846,7 @@
         {
           "id": 329,
           "area_id": 3,
-          "name": "Yummmess bar",
+          "name": "Yummmess酒吧",
           "created_at": "2015-06-09T22:58:53.000Z",
           "updated_at": "2015-11-19T07:27:29.000Z",
           "x": 13571,
@@ -1860,21 +1860,21 @@
         {
           "id": 336,
           "area_id": 3,
-          "name": "Graveyard",
+          "name": "墓地",
           "created_at": "2015-07-14T02:22:05.000Z",
           "updated_at": "2015-11-19T07:27:30.000Z",
           "x": 14556,
           "y": 4972,
           "score": 17,
           "user_id": 52,
-          "comment": "Really? this is the ZOMBIE APOCALYPSE and your gonna hide in the place with the dead people?",
+          "comment": "真的？这是僵尸启示录，你要躲在这里？",
           "approver_id": 2,
           "approved_at": "2015-11-19T07:27:30.000Z"
         },
         {
           "id": 368,
           "area_id": 3,
-          "name": "Bus Station",
+          "name": "公车站",
           "created_at": "2015-10-04T10:27:23.000Z",
           "updated_at": "2015-11-19T07:27:32.000Z",
           "x": 12733,
@@ -1888,21 +1888,21 @@
         {
           "id": 470,
           "area_id": 3,
-          "name": "East Bridge",
+          "name": "东部大桥",
           "created_at": "2015-12-31T01:06:10.000Z",
           "updated_at": "2016-02-27T09:30:48.000Z",
           "x": 12895,
           "y": 6898,
           "score": 10,
           "user_id": 78,
-          "comment": "Bridge Connecting Valley Station and Westpoint",
+          "comment": "连接 山谷站 和 西点的桥",
           "approver_id": 2,
           "approved_at": "2016-02-27T09:30:48.000Z"
         },
         {
           "id": 895,
           "area_id": 3,
-          "name": "Big Farm",
+          "name": "大型农场",
           "created_at": "2018-06-24T12:35:32.469Z",
           "updated_at": "2018-10-04T09:26:12.739Z",
           "x": 13856,
@@ -1918,12 +1918,12 @@
     },
     {
       "id": 4,
-      "name": "West Point",
+      "name": "西点",
       "pois": [
         {
           "id": 94,
           "area_id": 4,
-          "name": "Auto shop",
+          "name": "汽车商店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11898,
@@ -1937,7 +1937,7 @@
         {
           "id": 95,
           "area_id": 4,
-          "name": "Burgers",
+          "name": "汉堡",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12077,
@@ -1951,21 +1951,21 @@
         {
           "id": 96,
           "area_id": 4,
-          "name": "Church and cemetary",
+          "name": "教堂和公墓",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11069,
           "y": 6710,
           "score": 500,
           "user_id": 1,
-          "comment": "Does anyone else think it's a bad idea being on a cemetary during the zombie apocalypse?",
+          "comment": "僵尸世界末日的墓地，没人认为最危险的地方就是最安全的地方吗？",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 97,
           "area_id": 4,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11967,
@@ -1979,7 +1979,7 @@
         {
           "id": 98,
           "area_id": 4,
-          "name": "Crate shed",
+          "name": "板条棚",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10942,
@@ -1993,7 +1993,7 @@
         {
           "id": 99,
           "area_id": 4,
-          "name": "Dock",
+          "name": "船坞",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11828,
@@ -2007,7 +2007,7 @@
         {
           "id": 100,
           "area_id": 4,
-          "name": "Elementary School",
+          "name": "小学",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11740,
@@ -2021,7 +2021,7 @@
         {
           "id": 101,
           "area_id": 4,
-          "name": "Enigma books and Mendy's eatery",
+          "name": "恩尼格玛书店和曼迪餐厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11896,
@@ -2035,7 +2035,7 @@
         {
           "id": 102,
           "area_id": 4,
-          "name": "Farmhouse",
+          "name": "农舍",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11132,
@@ -2049,7 +2049,7 @@
         {
           "id": 103,
           "area_id": 4,
-          "name": "Food Market",
+          "name": "食品市场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11978,
@@ -2063,7 +2063,7 @@
         {
           "id": 104,
           "area_id": 4,
-          "name": "Fossoil",
+          "name": "福斯石油",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12069,
@@ -2077,7 +2077,7 @@
         {
           "id": 105,
           "area_id": 4,
-          "name": "GIGA Mart",
+          "name": "GIGA超市",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12024,
@@ -2091,7 +2091,7 @@
         {
           "id": 106,
           "area_id": 4,
-          "name": "Gun Shop",
+          "name": "枪店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12064,
@@ -2105,7 +2105,7 @@
         {
           "id": 107,
           "area_id": 4,
-          "name": "Hair-o-Genesis",
+          "name": "Hair-o-Genesis理发店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11852,
@@ -2119,7 +2119,7 @@
         {
           "id": 108,
           "area_id": 4,
-          "name": "Hardware store and Food market",
+          "name": "五金店 和 食品市场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11961,
@@ -2133,7 +2133,7 @@
         {
           "id": 109,
           "area_id": 4,
-          "name": "House by the lake",
+          "name": "湖边的房子",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 10182,
@@ -2147,7 +2147,7 @@
         {
           "id": 110,
           "area_id": 4,
-          "name": "Knox Bank",
+          "name": "诺克斯银行",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11913,
@@ -2161,7 +2161,7 @@
         {
           "id": 111,
           "area_id": 4,
-          "name": "Large Warehouse",
+          "name": "大型仓库",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12140,
@@ -2175,7 +2175,7 @@
         {
           "id": 112,
           "area_id": 4,
-          "name": "Laundromat",
+          "name": "自助洗衣房",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11931,
@@ -2189,7 +2189,7 @@
         {
           "id": 113,
           "area_id": 4,
-          "name": "Mini Hotel",
+          "name": "迷你酒店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12018,
@@ -2203,7 +2203,7 @@
         {
           "id": 114,
           "area_id": 4,
-          "name": "Motel",
+          "name": "汽车旅馆",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11860,
@@ -2217,7 +2217,7 @@
         {
           "id": 115,
           "area_id": 4,
-          "name": "Pharmahug",
+          "name": "Pharmahug药店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11935,
@@ -2231,21 +2231,21 @@
         {
           "id": 116,
           "area_id": 4,
-          "name": "Picnic area",
+          "name": "野餐区",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12033,
           "y": 7364,
           "score": 500,
           "user_id": 1,
-          "comment": "Consumption of brought food and drinks strictly forbidden!",
+          "comment": "严禁带进食物和饮料！",
           "approver_id": 2,
           "approved_at": "2015-02-01T18:00:14.000Z"
         },
         {
           "id": 117,
           "area_id": 4,
-          "name": "Pizza Whirled",
+          "name": "旋转披萨",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11660,
@@ -2259,7 +2259,7 @@
         {
           "id": 118,
           "area_id": 4,
-          "name": "Playground",
+          "name": "运动场",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11418,
@@ -2273,7 +2273,7 @@
         {
           "id": 119,
           "area_id": 4,
-          "name": "Police Station",
+          "name": "警察局",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11898,
@@ -2287,7 +2287,7 @@
         {
           "id": 120,
           "area_id": 4,
-          "name": "Post office",
+          "name": "邮局",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11956,
@@ -2301,7 +2301,7 @@
         {
           "id": 121,
           "area_id": 4,
-          "name": "R.B. Mat, Dentist",
+          "name": "R.B. Mat, 牙医",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11880,
@@ -2315,7 +2315,7 @@
         {
           "id": 122,
           "area_id": 4,
-          "name": "School",
+          "name": "学校",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11345,
@@ -2329,7 +2329,7 @@
         {
           "id": 123,
           "area_id": 4,
-          "name": "Seahorse Coffee",
+          "name": "海马咖啡",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11962,
@@ -2343,7 +2343,7 @@
         {
           "id": 124,
           "area_id": 4,
-          "name": "Spiffo's",
+          "name": "Spiffo浣熊餐厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11976,
@@ -2357,7 +2357,7 @@
         {
           "id": 125,
           "area_id": 4,
-          "name": "Storage Lots",
+          "name": "存储地段",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12137,
@@ -2371,7 +2371,7 @@
         {
           "id": 126,
           "area_id": 4,
-          "name": "Store constuction",
+          "name": "店铺建设",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12062,
@@ -2385,7 +2385,7 @@
         {
           "id": 127,
           "area_id": 4,
-          "name": "Sweets shop",
+          "name": "糖果店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11349,
@@ -2399,7 +2399,7 @@
         {
           "id": 128,
           "area_id": 4,
-          "name": "The Drake and Crystal Pie Place",
+          "name": "德雷克水晶馅饼店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11899,
@@ -2413,7 +2413,7 @@
         {
           "id": 129,
           "area_id": 4,
-          "name": "Thunder Gas",
+          "name": "迅雷天然气",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11820,
@@ -2427,7 +2427,7 @@
         {
           "id": 130,
           "area_id": 4,
-          "name": "Town Hall",
+          "name": "市政厅",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11941,
@@ -2441,7 +2441,7 @@
         {
           "id": 131,
           "area_id": 4,
-          "name": "Twiggy's",
+          "name": "Twiggy的木屋",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 12059,
@@ -2455,7 +2455,7 @@
         {
           "id": 132,
           "area_id": 4,
-          "name": "Zippee Market",
+          "name": "Zippee便利店",
           "created_at": "2015-02-01T18:00:14.000Z",
           "updated_at": "2015-02-01T18:00:14.000Z",
           "x": 11660,
@@ -2469,7 +2469,7 @@
         {
           "id": 206,
           "area_id": 4,
-          "name": "Furniture Shop",
+          "name": "家具店",
           "created_at": "2015-03-04T08:41:59.000Z",
           "updated_at": "2015-07-16T06:54:51.000Z",
           "x": 11932,
@@ -2483,7 +2483,7 @@
         {
           "id": 207,
           "area_id": 4,
-          "name": "Restaurant",
+          "name": "餐厅",
           "created_at": "2015-03-04T08:42:52.000Z",
           "updated_at": "2015-07-16T06:54:48.000Z",
           "x": 11932,
@@ -2497,7 +2497,7 @@
         {
           "id": 208,
           "area_id": 4,
-          "name": "Office Building",
+          "name": "办公楼",
           "created_at": "2015-03-04T08:43:39.000Z",
           "updated_at": "2015-07-16T06:54:50.000Z",
           "x": 11976,
@@ -2511,7 +2511,7 @@
         {
           "id": 209,
           "area_id": 4,
-          "name": "Office Building #2",
+          "name": "办公楼 #2",
           "created_at": "2015-03-04T08:46:16.000Z",
           "updated_at": "2015-07-16T06:54:49.000Z",
           "x": 11977,
@@ -2525,7 +2525,7 @@
         {
           "id": 210,
           "area_id": 4,
-          "name": "Commercial Rent",
+          "name": "商铺转让",
           "created_at": "2015-03-04T08:53:06.000Z",
           "updated_at": "2015-06-17T07:23:02.000Z",
           "x": 11666,
@@ -2539,7 +2539,7 @@
         {
           "id": 211,
           "area_id": 4,
-          "name": "Dock",
+          "name": "船坞",
           "created_at": "2015-03-04T08:54:09.000Z",
           "updated_at": "2015-07-16T06:54:51.000Z",
           "x": 11276,
@@ -2553,7 +2553,7 @@
         {
           "id": 223,
           "area_id": 4,
-          "name": "Preschool",
+          "name": "幼儿园",
           "created_at": "2015-03-13T20:27:45.000Z",
           "updated_at": "2015-06-17T07:23:01.000Z",
           "x": 13586,
@@ -2567,7 +2567,7 @@
         {
           "id": 318,
           "area_id": 4,
-          "name": "Food Market",
+          "name": "食品市场",
           "created_at": "2015-06-05T20:14:15.000Z",
           "updated_at": "2015-06-19T12:48:37.000Z",
           "x": 13937,
@@ -2581,7 +2581,7 @@
         {
           "id": 319,
           "area_id": 4,
-          "name": "Burger Restaurant",
+          "name": "汉堡餐厅",
           "created_at": "2015-06-05T20:14:43.000Z",
           "updated_at": "2015-11-19T07:27:36.000Z",
           "x": 13965,
@@ -2595,7 +2595,7 @@
         {
           "id": 320,
           "area_id": 4,
-          "name": "Cafe",
+          "name": "咖啡店",
           "created_at": "2015-06-05T20:15:36.000Z",
           "updated_at": "2015-06-19T12:48:35.000Z",
           "x": 13092,
@@ -2609,7 +2609,7 @@
         {
           "id": 322,
           "area_id": 4,
-          "name": "Cabin",
+          "name": "小棚屋",
           "created_at": "2015-06-05T20:20:36.000Z",
           "updated_at": "2015-11-19T07:27:37.000Z",
           "x": 13628,
@@ -2623,35 +2623,35 @@
         {
           "id": 358,
           "area_id": 4,
-          "name": "Valu In$urance",
+          "name": "Valu商业保险",
           "created_at": "2015-09-12T17:27:13.000Z",
           "updated_at": "2015-11-19T07:27:36.000Z",
           "x": 13664,
           "y": 5669,
           "score": 19,
           "user_id": 60,
-          "comment": "\"Sorry, zombie apocalypses aren't covered under the Act of God clause in your policy.\"",
+          "comment": "\"抱歉，您的保单条款中未涵盖僵尸事件，无法理赔。\"",
           "approver_id": 2,
           "approved_at": "2015-11-19T07:27:36.000Z"
         },
         {
           "id": 471,
           "area_id": 4,
-          "name": "Town Park",
+          "name": "城镇公园",
           "created_at": "2015-12-31T01:06:59.000Z",
           "updated_at": "2016-10-31T12:29:08.655Z",
           "x": 11786,
           "y": 6913,
           "score": 19,
           "user_id": 78,
-          "comment": "A nice small, suburban park.",
+          "comment": "一个漂亮的小型郊区公园。",
           "approver_id": 2,
           "approved_at": "2016-10-31T12:29:08.655Z"
         },
         {
           "id": 559,
           "area_id": 4,
-          "name": "Hardware Store",
+          "name": "五金店",
           "created_at": "2017-02-20T22:30:38.431Z",
           "updated_at": "2017-03-05T17:56:01.955Z",
           "x": 11831,
@@ -2665,7 +2665,7 @@
         {
           "id": 675,
           "area_id": 4,
-          "name": "Police station",
+          "name": "警察局",
           "created_at": "2017-07-01T09:09:57.217Z",
           "updated_at": "2017-10-09T08:54:20.959Z",
           "x": 8063,
@@ -2679,14 +2679,14 @@
         {
           "id": 863,
           "area_id": 4,
-          "name": "Farmhouse",
+          "name": "农舍",
           "created_at": "2017-11-19T14:18:17.736Z",
           "updated_at": "2017-11-28T08:35:10.371Z",
           "x": 14396,
           "y": 4568,
           "score": 20,
           "user_id": 163,
-          "comment": "Large farmhouse with toolsheds and chicken coop",
+          "comment": "大型农舍，带有工具棚和鸡舍",
           "approver_id": 2,
           "approved_at": "2017-11-28T08:35:10.370Z"
         }
@@ -2695,12 +2695,12 @@
     },
     {
       "id": 18,
-      "name": "Rosewood",
+      "name": "罗斯伍德",
       "pois": [
         {
           "id": 539,
           "area_id": 18,
-          "name": "Gas station",
+          "name": "加油站",
           "created_at": "2017-02-05T16:16:16.503Z",
           "updated_at": "2017-03-05T17:59:03.145Z",
           "x": 8297,
@@ -2714,21 +2714,21 @@
         {
           "id": 540,
           "area_id": 18,
-          "name": "Knox prison",
+          "name": "诺克斯监狱",
           "created_at": "2017-02-06T16:38:37.230Z",
           "updated_at": "2017-03-05T17:59:10.308Z",
           "x": 7693,
           "y": 11873,
           "score": 0,
           "user_id": 104,
-          "comment": "Not the best/worst place to live!",
+          "comment": "是个不好不坏的住所！",
           "approver_id": 2,
           "approved_at": "2017-03-05T17:58:56.218Z"
         },
         {
           "id": 542,
           "area_id": 18,
-          "name": "Spiffo's",
+          "name": "Spiffo浣熊餐厅",
           "created_at": "2017-02-07T18:27:48.710Z",
           "updated_at": "2017-03-05T17:59:30.107Z",
           "x": 8074,
@@ -2742,7 +2742,7 @@
         {
           "id": 543,
           "area_id": 18,
-          "name": "Motel",
+          "name": "汽车旅馆",
           "created_at": "2017-02-07T18:33:32.035Z",
           "updated_at": "2017-03-05T17:58:55.905Z",
           "x": 8078,
@@ -2756,7 +2756,7 @@
         {
           "id": 545,
           "area_id": 18,
-          "name": "Construction Site",
+          "name": "工地",
           "created_at": "2017-02-07T18:37:00.443Z",
           "updated_at": "2017-03-05T17:57:28.803Z",
           "x": 8219,
@@ -2770,7 +2770,7 @@
         {
           "id": 547,
           "area_id": 18,
-          "name": "Zippee Market",
+          "name": "Zippee便利店",
           "created_at": "2017-02-07T18:40:09.439Z",
           "updated_at": "2017-03-05T17:59:29.759Z",
           "x": 8089,
@@ -2784,7 +2784,7 @@
         {
           "id": 551,
           "area_id": 18,
-          "name": "Gas Station",
+          "name": "加油站",
           "created_at": "2017-02-07T18:45:26.149Z",
           "updated_at": "2017-03-05T17:58:32.732Z",
           "x": 8164,
@@ -2798,7 +2798,7 @@
         {
           "id": 552,
           "area_id": 18,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2017-02-07T18:46:06.386Z",
           "updated_at": "2017-03-05T17:56:55.753Z",
           "x": 8124,
@@ -2812,7 +2812,7 @@
         {
           "id": 553,
           "area_id": 18,
-          "name": "Auto Shop",
+          "name": "汽车商店",
           "created_at": "2017-02-08T04:17:10.449Z",
           "updated_at": "2017-03-05T17:57:18.549Z",
           "x": 8154,
@@ -2826,7 +2826,7 @@
         {
           "id": 554,
           "area_id": 18,
-          "name": "Rosewood Medical",
+          "name": "罗斯伍德医疗",
           "created_at": "2017-02-08T04:28:49.560Z",
           "updated_at": "2017-03-05T17:59:30.359Z",
           "x": 8089,
@@ -2840,7 +2840,7 @@
         {
           "id": 558,
           "area_id": 18,
-          "name": "Knox County Court of Justice",
+          "name": "诺克斯郡法院",
           "created_at": "2017-02-13T01:34:34.677Z",
           "updated_at": "2017-03-05T17:59:02.830Z",
           "x": 8075,
@@ -2854,7 +2854,7 @@
         {
           "id": 561,
           "area_id": 18,
-          "name": "Elementary School",
+          "name": "小学",
           "created_at": "2017-03-04T12:05:45.185Z",
           "updated_at": "2017-03-05T18:03:13.160Z",
           "x": 8341,
@@ -2868,7 +2868,7 @@
         {
           "id": 575,
           "area_id": 18,
-          "name": "Fresh Food Market",
+          "name": "生鲜食品市场",
           "created_at": "2017-03-31T19:20:36.898Z",
           "updated_at": "2017-11-02T08:57:59.447Z",
           "x": 9074,
@@ -2882,7 +2882,7 @@
         {
           "id": 589,
           "area_id": 18,
-          "name": "Bar",
+          "name": "酒吧",
           "created_at": "2017-04-19T03:43:59.645Z",
           "updated_at": "2017-05-23T09:19:38.625Z",
           "x": 8019,
@@ -2896,7 +2896,7 @@
         {
           "id": 594,
           "area_id": 18,
-          "name": "Clothing Store",
+          "name": "服装店",
           "created_at": "2017-04-19T03:48:03.300Z",
           "updated_at": "2017-11-02T08:34:59.639Z",
           "x": 8087,
@@ -2910,7 +2910,7 @@
         {
           "id": 595,
           "area_id": 18,
-          "name": "All-you-can-eat Buffet",
+          "name": "随你吃自助餐",
           "created_at": "2017-04-19T03:48:47.325Z",
           "updated_at": "2017-05-23T09:16:36.343Z",
           "x": 8086,
@@ -2924,7 +2924,7 @@
         {
           "id": 596,
           "area_id": 18,
-          "name": "Bookstore",
+          "name": "书店",
           "created_at": "2017-04-19T03:48:59.045Z",
           "updated_at": "2017-05-23T09:19:46.884Z",
           "x": 8087,
@@ -2938,7 +2938,7 @@
         {
           "id": 598,
           "area_id": 18,
-          "name": "Law Offices",
+          "name": "律师事务所",
           "created_at": "2017-04-19T03:50:12.468Z",
           "updated_at": "2017-11-07T19:27:48.155Z",
           "x": 8089,
@@ -2952,7 +2952,7 @@
         {
           "id": 604,
           "area_id": 18,
-          "name": "Mama McFudgeington's",
+          "name": "Mama McFudgeington律师事务所",
           "created_at": "2017-04-19T03:53:41.619Z",
           "updated_at": "2017-11-07T19:28:22.909Z",
           "x": 8085,
@@ -2966,21 +2966,21 @@
         {
           "id": 632,
           "area_id": 18,
-          "name": "Gated Community",
+          "name": "门控社区",
           "created_at": "2017-05-03T04:33:00.504Z",
           "updated_at": "2017-11-07T19:25:14.803Z",
           "x": 8026,
           "y": 11525,
           "score": 20,
           "user_id": 126,
-          "comment": "Good for base defense as zombies can't break through the fences.",
+          "comment": "很好的防御基地，因为僵尸不能突破围栏。",
           "approver_id": 2,
           "approved_at": "2017-11-07T19:25:14.801Z"
         },
         {
           "id": 643,
           "area_id": 18,
-          "name": "Car Repair",
+          "name": "汽车修理",
           "created_at": "2017-05-24T13:52:47.556Z",
           "updated_at": "2017-11-02T08:18:24.977Z",
           "x": 8154,
@@ -2994,21 +2994,21 @@
         {
           "id": 649,
           "area_id": 18,
-          "name": "House",
+          "name": "住宅",
           "created_at": "2017-06-09T05:33:17.917Z",
           "updated_at": "2017-11-07T19:26:54.074Z",
           "x": 8341,
           "y": 11750,
           "score": 20,
           "user_id": 132,
-          "comment": "Single level house with farm plots, a tool shed and a high fence around with one way in. Good for a possible base location. ",
+          "comment": "单层住宅，有农场地块，工具棚和高围栏。非常适合的基地备选位置。",
           "approver_id": 2,
           "approved_at": "2017-11-07T19:26:52.250Z"
         },
         {
           "id": 662,
           "area_id": 18,
-          "name": "Buffet",
+          "name": "自助餐",
           "created_at": "2017-06-09T05:54:29.891Z",
           "updated_at": "2017-11-02T08:17:18.656Z",
           "x": 8087,
@@ -3022,7 +3022,7 @@
         {
           "id": 663,
           "area_id": 18,
-          "name": "Diner",
+          "name": "小餐馆",
           "created_at": "2017-06-09T05:55:07.414Z",
           "updated_at": "2017-11-02T08:44:24.358Z",
           "x": 8075,
@@ -3050,7 +3050,7 @@
         {
           "id": 677,
           "area_id": 18,
-          "name": "Court house",
+          "name": "Court 住宅",
           "created_at": "2017-07-01T09:10:35.794Z",
           "updated_at": "2017-11-02T08:42:48.701Z",
           "x": 8071,
@@ -3078,7 +3078,7 @@
         {
           "id": 685,
           "area_id": 18,
-          "name": "Fossoil",
+          "name": "福斯石油",
           "created_at": "2017-07-17T11:42:26.443Z",
           "updated_at": "2017-11-02T08:57:30.390Z",
           "x": 8283,
@@ -3120,7 +3120,7 @@
         {
           "id": 725,
           "area_id": 18,
-          "name": "Bank",
+          "name": "银行",
           "created_at": "2017-07-18T05:47:48.880Z",
           "updated_at": "2017-11-02T08:25:13.194Z",
           "x": 8096,
@@ -3134,7 +3134,7 @@
         {
           "id": 734,
           "area_id": 18,
-          "name": "Bus Station",
+          "name": "公车站",
           "created_at": "2017-07-18T07:03:35.446Z",
           "updated_at": "2017-11-02T08:25:42.153Z",
           "x": 8244,
@@ -3162,7 +3162,7 @@
         {
           "id": 737,
           "area_id": 18,
-          "name": "Packaging Warehouses",
+          "name": "Packaging 仓库",
           "created_at": "2017-07-18T07:36:39.298Z",
           "updated_at": "2017-11-07T19:29:30.793Z",
           "x": 9199,
@@ -3176,7 +3176,7 @@
         {
           "id": 819,
           "area_id": 18,
-          "name": "Food Market and Laundromat",
+          "name": "食品市场 and 自助洗衣房",
           "created_at": "2017-10-14T03:48:43.902Z",
           "updated_at": "2017-11-02T08:57:16.635Z",
           "x": 8136,
@@ -3190,7 +3190,7 @@
         {
           "id": 829,
           "area_id": 18,
-          "name": "Warehouse",
+          "name": "Ware住宅",
           "created_at": "2017-10-14T04:05:17.680Z",
           "updated_at": "2017-11-07T19:34:18.212Z",
           "x": 9202,
@@ -3232,7 +3232,7 @@
         {
           "id": 865,
           "area_id": 18,
-          "name": "Pizza Restaurant",
+          "name": "Pizza 餐厅",
           "created_at": "2017-12-19T02:43:06.875Z",
           "updated_at": "2018-05-11T11:12:17.675Z",
           "x": 8075,
@@ -3253,7 +3253,7 @@
         {
           "id": 693,
           "area_id": 19,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2017-07-17T14:27:44.128Z",
           "updated_at": "2017-11-07T19:43:09.390Z",
           "x": 10328,
@@ -3281,7 +3281,7 @@
         {
           "id": 711,
           "area_id": 19,
-          "name": "Post Office",
+          "name": "邮局",
           "created_at": "2017-07-17T14:30:41.421Z",
           "updated_at": "2017-11-07T19:46:16.576Z",
           "x": 10107,
@@ -3309,7 +3309,7 @@
         {
           "id": 713,
           "area_id": 19,
-          "name": "School",
+          "name": "学校",
           "created_at": "2017-07-17T14:31:53.056Z",
           "updated_at": "2017-11-07T19:46:37.484Z",
           "x": 9999,
@@ -3323,7 +3323,7 @@
         {
           "id": 714,
           "area_id": 19,
-          "name": "Food Market",
+          "name": "食品市场",
           "created_at": "2017-07-17T14:35:00.533Z",
           "updated_at": "2017-11-07T19:44:17.032Z",
           "x": 10113,
@@ -3337,7 +3337,7 @@
         {
           "id": 715,
           "area_id": 19,
-          "name": "Gas Station",
+          "name": "加油站",
           "created_at": "2017-07-17T14:35:34.231Z",
           "updated_at": "2017-11-07T19:44:25.648Z",
           "x": 10144,
@@ -3365,7 +3365,7 @@
         {
           "id": 744,
           "area_id": 19,
-          "name": "Doctor's Office",
+          "name": "医生办公室",
           "created_at": "2017-07-18T07:53:03.981Z",
           "updated_at": "2017-11-07T19:43:55.868Z",
           "x": 10160,
@@ -3379,7 +3379,7 @@
         {
           "id": 745,
           "area_id": 19,
-          "name": "Pharmahug",
+          "name": "Pharmahug药店",
           "created_at": "2017-07-18T07:54:08.295Z",
           "updated_at": "2017-11-07T19:46:08.217Z",
           "x": 10144,
@@ -3393,7 +3393,7 @@
         {
           "id": 746,
           "area_id": 19,
-          "name": "Mendy's Eatery",
+          "name": "曼迪餐厅",
           "created_at": "2017-07-18T07:54:26.449Z",
           "updated_at": "2017-11-07T19:45:11.716Z",
           "x": 10131,
@@ -3407,7 +3407,7 @@
         {
           "id": 748,
           "area_id": 19,
-          "name": "Restaurant",
+          "name": "餐厅",
           "created_at": "2017-07-18T07:55:19.115Z",
           "updated_at": "2017-11-07T19:46:24.855Z",
           "x": 10095,
@@ -3421,7 +3421,7 @@
         {
           "id": 752,
           "area_id": 19,
-          "name": "Family Fashion",
+          "name": "时尚一家人",
           "created_at": "2017-07-18T08:17:21.159Z",
           "updated_at": "2017-11-07T19:44:08.838Z",
           "x": 10079,
@@ -3435,7 +3435,7 @@
         {
           "id": 753,
           "area_id": 19,
-          "name": "Bakery",
+          "name": "面包店",
           "created_at": "2017-07-18T08:17:33.701Z",
           "updated_at": "2017-11-07T19:43:04.099Z",
           "x": 10081,
@@ -3449,7 +3449,7 @@
         {
           "id": 756,
           "area_id": 19,
-          "name": "Dormitory",
+          "name": "集体宿舍",
           "created_at": "2017-07-18T08:48:08.049Z",
           "updated_at": "2017-11-07T19:43:59.562Z",
           "x": 10080,
@@ -3463,7 +3463,7 @@
         {
           "id": 795,
           "area_id": 19,
-          "name": "Insurance Office",
+          "name": "保险办公室",
           "created_at": "2017-10-14T02:58:43.626Z",
           "updated_at": "2017-11-07T19:44:42.966Z",
           "x": 10074,
@@ -3477,7 +3477,7 @@
         {
           "id": 800,
           "area_id": 19,
-          "name": "Hair-Saloon",
+          "name": "美发沙龙",
           "created_at": "2017-10-14T03:02:38.608Z",
           "updated_at": "2017-11-07T19:44:35.143Z",
           "x": 10183,
@@ -3491,7 +3491,7 @@
         {
           "id": 801,
           "area_id": 19,
-          "name": "Office",
+          "name": "办公室",
           "created_at": "2017-10-14T03:03:17.756Z",
           "updated_at": "2017-11-07T19:45:43.269Z",
           "x": 10184,
@@ -3505,7 +3505,7 @@
         {
           "id": 802,
           "area_id": 19,
-          "name": "Laundromat",
+          "name": "自助洗衣房",
           "created_at": "2017-10-14T03:07:09.164Z",
           "updated_at": "2017-11-07T19:44:47.615Z",
           "x": 10183,
@@ -3521,12 +3521,12 @@
     },
     {
       "id": 22,
-      "name": "Riverside",
+      "name": "河滨小镇",
       "pois": [
         {
           "id": 842,
           "area_id": 22,
-          "name": "Hardware Store",
+          "name": "五金店",
           "created_at": "2017-11-10T08:59:26.103Z",
           "updated_at": "2017-11-28T08:38:21.137Z",
           "x": 6364,
@@ -3554,7 +3554,7 @@
         {
           "id": 844,
           "area_id": 22,
-          "name": "Gated Community ",
+          "name": "门控社区",
           "created_at": "2017-11-10T09:01:14.778Z",
           "updated_at": "2017-11-28T08:38:01.100Z",
           "x": 6715,
@@ -3568,7 +3568,7 @@
         {
           "id": 845,
           "area_id": 22,
-          "name": "Enigmabooks",
+          "name": "恩尼格玛书店",
           "created_at": "2017-11-10T09:02:23.296Z",
           "updated_at": "2017-11-28T08:36:54.625Z",
           "x": 6437,
@@ -3582,7 +3582,7 @@
         {
           "id": 846,
           "area_id": 22,
-          "name": "Toy Store",
+          "name": "玩具店",
           "created_at": "2017-11-10T09:03:43.267Z",
           "updated_at": "2017-11-28T08:36:16.134Z",
           "x": 6452,
@@ -3596,7 +3596,7 @@
         {
           "id": 847,
           "area_id": 22,
-          "name": "Police Station",
+          "name": "警察局",
           "created_at": "2017-11-10T09:05:11.266Z",
           "updated_at": "2017-11-28T08:35:48.536Z",
           "x": 6082,
@@ -3610,7 +3610,7 @@
         {
           "id": 848,
           "area_id": 22,
-          "name": "Gas Station",
+          "name": "加油站",
           "created_at": "2017-11-10T09:05:28.328Z",
           "updated_at": "2017-11-28T08:37:42.387Z",
           "x": 6083,
@@ -3624,7 +3624,7 @@
         {
           "id": 849,
           "area_id": 22,
-          "name": "School",
+          "name": "学校",
           "created_at": "2017-11-10T09:06:35.837Z",
           "updated_at": "2017-11-28T08:39:26.813Z",
           "x": 6446,
@@ -3638,7 +3638,7 @@
         {
           "id": 850,
           "area_id": 22,
-          "name": "Golf course",
+          "name": "高尔夫球场",
           "created_at": "2017-11-10T09:09:01.180Z",
           "updated_at": "2017-11-28T08:38:14.155Z",
           "x": 6091,
@@ -3652,7 +3652,7 @@
         {
           "id": 851,
           "area_id": 22,
-          "name": "Country club",
+          "name": "乡村俱乐部",
           "created_at": "2017-11-10T09:09:25.100Z",
           "updated_at": "2017-11-28T08:36:46.101Z",
           "x": 5756,
@@ -3666,7 +3666,7 @@
         {
           "id": 853,
           "area_id": 22,
-          "name": "Food Market",
+          "name": "食品市场",
           "created_at": "2017-11-10T09:13:15.491Z",
           "updated_at": "2017-11-28T08:37:10.143Z",
           "x": 5969,
@@ -3680,7 +3680,7 @@
         {
           "id": 854,
           "area_id": 22,
-          "name": "Bar",
+          "name": "酒吧",
           "created_at": "2017-11-10T09:13:47.104Z",
           "updated_at": "2017-11-28T08:36:30.399Z",
           "x": 5963,
@@ -3694,7 +3694,7 @@
         {
           "id": 855,
           "area_id": 22,
-          "name": "Pharmacy",
+          "name": "药店",
           "created_at": "2017-11-11T10:55:45.431Z",
           "updated_at": "2017-11-28T08:35:38.376Z",
           "x": 6471,
@@ -3708,7 +3708,7 @@
         {
           "id": 857,
           "area_id": 22,
-          "name": "Spiffo's",
+          "name": "Spiffo浣熊餐厅",
           "created_at": "2017-11-11T16:05:27.804Z",
           "updated_at": "2017-11-28T08:36:07.790Z",
           "x": 6123,
@@ -3722,7 +3722,7 @@
         {
           "id": 859,
           "area_id": 22,
-          "name": "Church",
+          "name": "教会",
           "created_at": "2017-11-11T16:06:59.643Z",
           "updated_at": "2017-11-28T08:36:36.750Z",
           "x": 6568,
@@ -3736,7 +3736,7 @@
         {
           "id": 860,
           "area_id": 22,
-          "name": "School",
+          "name": "学校",
           "created_at": "2017-11-11T16:31:31.740Z",
           "updated_at": "2017-11-28T08:35:58.013Z",
           "x": 6440,
@@ -3750,7 +3750,7 @@
         {
           "id": 861,
           "area_id": 22,
-          "name": "Laundromat",
+          "name": "自助洗衣房",
           "created_at": "2017-11-11T16:32:55.316Z",
           "updated_at": "2017-11-28T08:38:47.756Z",
           "x": 6407,
@@ -3778,7 +3778,7 @@
         {
           "id": 869,
           "area_id": 22,
-          "name": "Burgers",
+          "name": "汉堡",
           "created_at": "2017-12-24T02:54:01.111Z",
           "updated_at": "2018-05-11T11:13:24.861Z",
           "x": 5955,
@@ -3792,7 +3792,7 @@
         {
           "id": 870,
           "area_id": 22,
-          "name": "Ice Cream Parlor",
+          "name": "冰淇淋店",
           "created_at": "2017-12-29T21:49:56.365Z",
           "updated_at": "2018-05-11T11:15:17.936Z",
           "x": 6471,
@@ -3806,7 +3806,7 @@
         {
           "id": 873,
           "area_id": 22,
-          "name": "Bank",
+          "name": "银行",
           "created_at": "2018-03-15T22:06:33.834Z",
           "updated_at": "2018-05-11T11:13:24.269Z",
           "x": 6504,
@@ -3820,7 +3820,7 @@
         {
           "id": 874,
           "area_id": 22,
-          "name": "Clothing Store",
+          "name": "服装店",
           "created_at": "2018-03-15T22:08:07.336Z",
           "updated_at": "2018-05-11T11:12:39.778Z",
           "x": 6403,
@@ -3834,7 +3834,7 @@
         {
           "id": 876,
           "area_id": 22,
-          "name": "Clothing Store",
+          "name": "服装店",
           "created_at": "2018-03-15T22:09:10.238Z",
           "updated_at": "2018-05-11T11:12:39.292Z",
           "x": 6506,
@@ -3848,7 +3848,7 @@
         {
           "id": 880,
           "area_id": 22,
-          "name": "Farm Store",
+          "name": "农场商店",
           "created_at": "2018-03-30T20:48:16.914Z",
           "updated_at": "2018-05-11T11:14:00.895Z",
           "x": 7253,
@@ -3862,7 +3862,7 @@
         {
           "id": 881,
           "area_id": 22,
-          "name": "Gigamart",
+          "name": "GIGA超市",
           "created_at": "2018-04-06T20:10:06.023Z",
           "updated_at": "2018-05-11T11:14:17.636Z",
           "x": 6505,
@@ -3890,7 +3890,7 @@
         {
           "id": 886,
           "area_id": 22,
-          "name": "Auto Repair",
+          "name": "自动修理",
           "created_at": "2018-05-07T23:55:54.424Z",
           "updated_at": "2018-05-11T11:13:23.308Z",
           "x": 5429,
@@ -3904,7 +3904,7 @@
         {
           "id": 887,
           "area_id": 22,
-          "name": "Diner",
+          "name": "小餐馆",
           "created_at": "2018-05-07T23:56:28.675Z",
           "updated_at": "2018-05-11T11:13:25.465Z",
           "x": 5424,
@@ -3918,7 +3918,7 @@
         {
           "id": 888,
           "area_id": 22,
-          "name": "Gas Station",
+          "name": "加油站",
           "created_at": "2018-05-07T23:57:23.119Z",
           "updated_at": "2018-05-11T11:14:13.098Z",
           "x": 5418,
@@ -3932,7 +3932,7 @@
         {
           "id": 889,
           "area_id": 22,
-          "name": "Factory",
+          "name": "工厂",
           "created_at": "2018-05-08T00:00:10.040Z",
           "updated_at": "2018-05-11T11:13:27.435Z",
           "x": 5570,
@@ -3946,7 +3946,7 @@
         {
           "id": 890,
           "area_id": 22,
-          "name": "Factory Storage",
+          "name": "工厂仓库",
           "created_at": "2018-05-08T00:00:47.551Z",
           "updated_at": "2018-05-11T11:13:33.224Z",
           "x": 5617,
@@ -3960,14 +3960,14 @@
         {
           "id": 891,
           "area_id": 22,
-          "name": "Farm",
+          "name": "农场",
           "created_at": "2018-05-08T00:03:40.623Z",
           "updated_at": "2018-05-11T11:13:55.844Z",
           "x": 5693,
           "y": 5740,
           "score": 0,
           "user_id": 184,
-          "comment": "Has a lot of land, two houses and sheds.",
+          "comment": "有很多土地，两个住宅和棚屋。",
           "approver_id": 2,
           "approved_at": "2018-05-11T11:13:55.842Z"
         }
