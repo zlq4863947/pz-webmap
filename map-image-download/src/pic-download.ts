@@ -15,7 +15,7 @@ export class PicDownload {
           for (let k = 0; k < 100; k++) {
             const dir = `${i}`;
             const filename = `${j}_${k}.jpg`;
-            const imageDirPath = join(__dirname, '../images');
+            const imageDirPath = join(__dirname, '../../maps/SurvivalL0/map_files');
             if (!existsSync(imageDirPath)) {
               console.log(`创建图片文件夹: ${imageDirPath}`);
               mkdirSync(imageDirPath);

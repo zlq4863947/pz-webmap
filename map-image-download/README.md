@@ -18,4 +18,4 @@
     npm start
 ```
 
-运行后会在*images*文件夹下保存图片。
+运行后会在 **maps/SurvivalL0/map_files** 文件夹下保存图片。

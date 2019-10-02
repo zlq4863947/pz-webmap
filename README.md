@@ -20,6 +20,10 @@
  - 官方地图图片自动下载
 >下载功能请查看:[map-image-download](map-image-download/README.md)
   
+## 在线地址
+
+- github: https://zlq4863947.github.io/pz-webmap/
+
 ## 安装  
   
 ```  
