@@ -9,7 +9,7 @@ const writeFileAsync = promisify(writeFile);
 export class PicDownload {
   async download() {
     const url = 'https://map.projectzomboid.com/maps/SurvivalL0/map_files/';
-    for (let i = 0; i < 22; i++) {
+    for (let i = 10; i < 100; i++) {
       try {
         for (let j = 0; j < 100; j++) {
           for (let k = 0; k < 100; k++) {
