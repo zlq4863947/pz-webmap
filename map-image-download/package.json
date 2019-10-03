@@ -8,6 +8,8 @@
     "format:md": "prettier --config .prettierrc --write \"./README*.md\" --parser markdown",
     "format:ts": "yarn format:ts:import && prettier --config .prettierrc --write \"src/**/*.ts\"",
     "format:ts:import": "import-sort --write \"src/**/*.ts\"",
+    "jest": "jest -c jest.config.js",
+    "serve": "ts-node -r tsconfig-paths/register src/serve.ts",
     "start": "ts-node -r tsconfig-paths/register src/main.ts"
   },
   "keywords": [
@@ -15,17 +17,26 @@
   ],
   "author": "zkq4863947@gmail.com",
   "dependencies": {
+    "@nestjs/common": "^6.8.0",
+    "@nestjs/core": "^6.8.0",
+    "@nestjs/platform-express": "^6.8.0",
+    "axios": "^0.19.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.3",
     "ts-node": "^8.3.0",
-    "tsconfig-paths": "^3.8.0",
-    "axios": "^0.19.0"
+    "tsconfig-paths": "^3.8.0"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.18",
     "@types/node": "^12.6.9",
     "import-sort": "^6.0.0",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-typescript": "^6.0.0",
     "import-sort-style-module-alias": "^1.0.4",
-    "prettier": "^1.18.2"
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
   },
   "license": "ISC"
 }

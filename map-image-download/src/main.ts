@@ -1,8 +1,7 @@
-import { PicDownload } from './pic-download';
+import { picDownload } from './pic-download';
 
 async function bootstrap(): Promise<void> {
-  const picDownload = new PicDownload();
-  await picDownload.download();
+  await picDownload();
 }
 
 bootstrap().catch((e) => {
