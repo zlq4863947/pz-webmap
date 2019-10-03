@@ -1,11 +1,11 @@
 
 # 僵尸毁灭工程地图项目
   
-下载《僵尸毁灭工程》地图图片  
+《僵尸毁灭工程》官方在线地图汉化版
   
-## 环境需求  
-  
-- nodejs  
+## 在线地址
+
+- github: https://zlq4863947.github.io/pz-webmap/
 
 ## 项目功能
 
@@ -20,24 +20,11 @@
  - 官方地图图片自动下载
 >下载功能请查看:[map-image-download](map-image-download/README.md)
   
-## 在线地址
+## 开发者说明
 
-- github: https://zlq4863947.github.io/pz-webmap/
+[说明文档](DEV_README.md)
 
-## 安装  
-  
-```  
- npm install
-```  
-  
-## 运行网页项目 
-  
-```  
- npm start
- 
- ```
-  
-运行后会显示如下
+##  网站展示图
 
 ![](images/map.png)
 
