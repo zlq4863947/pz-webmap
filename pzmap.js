@@ -34,7 +34,9 @@ if(!Object.keys) Object.keys = function(o){{{
 	var ret=[],p;
 	for(p in o) if(Object.prototype.hasOwnProperty.call(o,p)) ret.push(p);
 	return ret;
-}}}
+}}};
+
+window.get = $.get;
 
 window.onresize = function(){{{
 	if ($(".sidebar").css("display") == "none"){
@@ -678,7 +680,7 @@ function runOSD(data, status, jqxhr){{{
 
 	viewer = OpenSeadragon({
 		id: "map",
-		tileSources: t,
+    tileSources: t,
 		debugMode: DEBUG,
 		minScrollDeltaTime: 10//,
 		// overlays: overlays

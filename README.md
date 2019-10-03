@@ -24,6 +24,10 @@
 
 - github: https://zlq4863947.github.io/pz-webmap/
 
+## 调试地址
+
+http://127.0.0.1:8081/?DEBUG=1
+
 ## 安装  
   
 ```  
