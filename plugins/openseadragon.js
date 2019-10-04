@@ -1220,7 +1220,7 @@ function OpenSeadragon( options ){
             useCanvas:              true,  // Use canvas element for drawing if available
 
             //INTERFACE RESOURCE SETTINGS
-            prefixUrl:              "/images/",
+            prefixUrl:              "images/",
             navImages: {
                 zoomIn: {
                     REST:   'zoomin_rest.png',
