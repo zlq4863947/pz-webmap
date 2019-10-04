@@ -21281,7 +21281,9 @@ function loadTile( tiledImage, tile, time ) {
       }
     });
   };
-  tile.url = `https://map.projectzomboid.com/${tile.url}`;
+  if (!tile.url.includes('http')) {
+    tile.url = `https://map.projectzomboid.com/${tile.url}`;
+  }
   /*
   debugger
   var [_, project, _, dir, filename] = tile.url.split('/');
