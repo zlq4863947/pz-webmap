@@ -21281,16 +21281,25 @@ function loadTile( tiledImage, tile, time ) {
       }
     });
   };
-  var [_, _, _, dir, filename] = tile.url.split('/')
-  var path = `http://127.0.0.1:3200/pic?dir=${dir}&filename=${filename}`;
+  tile.url = `https://map.projectzomboid.com/${tile.url}`;
+  /*
+  debugger
+  var [_, project, _, dir, filename] = tile.url.split('/');
+  // tile.url = `https://raw.githubusercontent.com/ellite2008/pz-map-${project}/master/map_files/${dir}/${filename}`;
+  tile.url = `http://127.0.0.1:8081/map_files/${dir}/${filename}`;
+  var path = `http://127.0.0.1:3200/pic?project=${project}&dir=${dir}&filename=${filename}`;
+  console.log('请求文件：', path, '，元参数：', tile.url.split('/'));
+  if (!project || project === 'map_files' || tile.url.split('/').length < 6) {
+    console.error('project内容错误！！！');
+    return;
+  }
   if (dir && filename && window) {
     window.get(path,{},()=>{
       loadTiledImage();
     })
-  } else {
-    console.log('请求文件错误：', path)
+  } else {*/
     loadTiledImage();
-  }
+  //}
 }
 
 /**

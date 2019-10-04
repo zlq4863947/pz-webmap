@@ -7,7 +7,7 @@ export class PicConstroller {
   constructor(private readonly picService: PicService) {}
 
   @Get()
-  savePic(@Query('dir') dir: string, @Query('filename') filename: string) {
-    return this.picService.save(dir, filename);
+  savePic(@Query('project') project: string, @Query('dir') dir: string, @Query('filename') filename: string) {
+    return this.picService.save(project, dir, filename);
   }
 }
