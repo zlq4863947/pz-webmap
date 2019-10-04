@@ -16,8 +16,7 @@
 
 ## 真・项目功能
 
- - 汉化官方在线地图（已汉化？）
- - 官方地图图片自动下载
+ - 汉化官方在线地图（完美汉化）
 >下载功能请查看:[map-image-download](map-image-download/README.md)
   
 ## 开发者说明
