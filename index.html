@@ -1,695 +1,696 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='zh-cmn-Hans'>
 
 <head>
-    <title>僵尸毁灭工程地图项目</title>
-    <link href="plugins/jquery/jquery-ui.css" rel="stylesheet">
-    <link href="plugins/bootstrap.min.css" rel="stylesheet">
-    <link href="footer.css" rel="stylesheet">
-    <link href="dashboard.css" rel="stylesheet">
-    <link href="socialshareprivacy/stylesheets/jquery.socialshareprivacy.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="plugins/jquery/jquery.cookiebar.css" rel="stylesheet" type="text/css">
-    <meta name="google" content="notranslate" />
-    <meta name="msapplication-config" content="none" />
-    <!-- Extra code so IE and Chrome don't 404 the server -->
-    <link rel="apple-touch-icon" href="empty.png" />
-    <!-- Same for Apple... -->
+  <title>僵尸毁灭工程地图项目</title>
+  <link href="plugins/jquery/jquery-ui.css" rel="stylesheet">
+  <link href="plugins/bootstrap.min.css" rel="stylesheet">
+  <link href="footer.css" rel="stylesheet">
+  <link href="dashboard.css" rel="stylesheet">
+  <link href="socialshareprivacy/stylesheets/jquery.socialshareprivacy.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="plugins/jquery/jquery.cookiebar.css" rel="stylesheet" type="text/css">
+  <meta name="google" content="notranslate" />
+  <meta name="msapplication-config" content="none" />
+  <!-- Extra code so IE and Chrome don't 404 the server -->
+  <link rel="apple-touch-icon" href="empty.png" />
+  <!-- Same for Apple... -->
 
-    <script type='text/javascript' src="plugins/jquery-1.9.1.js"></script>
-    <script type='text/javascript' src="plugins/jquery-ui.js"></script>
-    <script type="text/javascript" src="plugins/openseadragon.js"></script> <!--min.-->
+  <script type='text/javascript' src="plugins/jquery-1.9.1.js"></script>
+  <script type='text/javascript' src="plugins/jquery-ui.js"></script>
+  <script type="text/javascript" src="plugins/openseadragon.js"></script>
+  <!--min.-->
 
-    <script type="application/x-social-share-privacy-settings">{"path_prefix":"socialshareprivacy/","layout":"line","uri":"https://map.projectzomboid.com/","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"fbshare":{"status":false},"hackernews":{"status":false},"linkedin":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false},"flattr":{"status":false,"uid":"blindcoder"}}}</script>
+  <script type="application/x-social-share-privacy-settings">{"path_prefix":"socialshareprivacy/","layout":"line","uri":"https://map.projectzomboid.com/","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"fbshare":{"status":false},"hackernews":{"status":false},"linkedin":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false},"flattr":{"status":false,"uid":"blindcoder"}}}</script>
 </head>
 
 <body>
-    <div id="wrap">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!--{{{-->
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">僵尸毁灭工程地图项目</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a id='btnLicense' href="#"><img alt="Creative Commons License" style="border-width:0" src="images/by-nc-sa/88x31.png" /></a>
-                        </li>
-                        <li>
-                            <button id="btnTogglePOI">切换兴趣点</button>
-                        </li>
-                        <li>
-                            <button id="btnFlushPOI">清空兴趣点</button>
-                        </li>
-                        <li>
-                            <button id="btnAddPOI">添加兴趣点</button>
-                        </li>
-                        <li>
-                            <select id="selPOI">
-                                <option value="null">[选择兴趣点]</option>
-                            </select>
-                        </li>
+<div id="wrap">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!--{{{-->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">僵尸毁灭工程地图项目</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a id='btnLicense' href="#"><img alt="Creative Commons License" style="border-width:0" src="images/by-nc-sa/88x31.png" /></a>
+          </li>
+          <li>
+            <button id="btnTogglePOI">切换兴趣点</button>
+          </li>
+          <li>
+            <button id="btnFlushPOI">清空兴趣点</button>
+          </li>
+          <li>
+            <button id="btnAddPOI">添加兴趣点</button>
+          </li>
+          <li>
+            <select id="selPOI">
+              <option value="null">[选择兴趣点]</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--}}}-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <!--{{{ headingOne-->
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  官方地图
+                </a>
+              </h4>
+            </div>
+            <!-- panel-heading -->
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <ul class="nav">
+                  <li class=""><a desc="SurvivalL0" href="?">诺克斯郡 <span class="badge">Build 39</span></a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>包含</b></li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="NewDenver_20170424" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFallsv3" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="Otr_20170517_" data-toggle="button" id="layerOtr_20170517_">包含欧特</button>
+                        </a>
+                      </li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="SurvivalLevelChooser" desc="SurvivalLevelChooser">
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
                     </ul>
-                </div>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="Survival_Build38L0" href="?desc=Survival_Build38L0">诺克斯郡 <span class="badge">Build 38</span></a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>包含</b></li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="NewDenver_20170424" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFallsv3" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="Otr_20170517_" data-toggle="button" id="layerOtr_20170517_">包含欧特</button>
+                        </a>
+                      </li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Survival_Build38LevelChooser" desc="Survival_Build38LevelChooser">
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class="onlywhenactive"><a desc="Survival_Build35L0" href="?desc=Survival_Build35L0">诺克斯郡 <span class="badge">Build 35</span></a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>包含</b></li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="NewDenver_20170424" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFallsv3" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="Otr_20170517_" data-toggle="button" id="layerOtr_20170517_">包含欧特</button>
+                        </a>
+                      </li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Survival_Build35LevelChooser" desc="Survival_Build35LevelChooser">
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class="onlywhenactive"><a desc="Survival_b30L0" href="?desc=Survival_b30L0">诺克斯郡 <span class="badge">Build 30</span></a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <!-- <li class="disabled"><b>包含</b></li>
+<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="Dreadwood" data-toggle="button" id="layerDreadwood">Overlay Dreadwood</button></a></li>
+<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFalls" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button></a></li>
+<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="New_Denver_v2_00" data-toggle="button" id="layerNewDenver">包含新丹佛</button></a></li>
+<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="Rebuildv1" data-toggle="button" id="layerRebuildv1">Overlay Drayton (Rebuild)</button></a></li>
+<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="TWDPrisonv3" data-toggle="button" id="layerTWDPrisonv3">Overlay TWD Prison</button></a></li> -->
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Survival_b30LevelChooser" desc="Survival_b30LevelChooser">
+                            <option value="7">Level 7</option>
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class="onlywhenactive"><a desc="Survival_1xL0" href="?desc=Survival_1xL0">诺克斯郡 <span class="badge">1x tiles</span></a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>包含</b></li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="Dreadwood" data-toggle="button" id="layerDreadwood">Overlay Dreadwood</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFalls" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="New_Denver_v2_00" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="Rebuildv1" data-toggle="button" id="layerRebuildv1">Overlay Drayton (Rebuild)</button>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a>
+                          <button type="button" class="btn-overlay btn w100 btn-info" desc="TWDPrisonv3" data-toggle="button" id="layerTWDPrisonv3">Overlay TWD Prison</button>
+                        </a>
+                      </li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Survival_1xLevelChooser" desc="Survival_1xLevelChooser">
+                            <option value="7">Level 7</option>
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="Challenge1L0" href="?desc=Challenge1L0">挑战地图 #1</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Challenge1LevelChooser" desc="Challenge1">
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="Challenge2L0" href="?desc=Challenge2L0">挑战地图 #2</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Challenge2LevelChooser" desc="Challenge2">
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="KnoxCounty0_v1L0" href="?desc=KnoxCounty0_v1L0">诺克斯郡 <span class="badge">0.1.5</span></a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="KnoxCountyLevelChooser" desc="KnoxCounty0_v1">
+                            <option value="7">Level 7</option>
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                </ul>
+              </div>
             </div>
-        </div>
-        <!--}}}-->
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <!--{{{ headingOne-->
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
-										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-											官方地图
-										</a>
-									</h4>
-                            </div>
-                            <!-- panel-heading -->
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li class=""><a desc="SurvivalL0" href="?">诺克斯郡 <span class="badge">Build 39</span></a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>包含</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="NewDenver_20170424" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFallsv3" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="Otr_20170517_" data-toggle="button" id="layerOtr_20170517_">包含欧特</button>
-                                                    </a>
-                                                </li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="SurvivalLevelChooser" desc="SurvivalLevelChooser">
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="Survival_Build38L0" href="?desc=Survival_Build38L0">诺克斯郡 <span class="badge">Build 38</span></a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>包含</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="NewDenver_20170424" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFallsv3" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="Otr_20170517_" data-toggle="button" id="layerOtr_20170517_">包含欧特</button>
-                                                    </a>
-                                                </li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Survival_Build38LevelChooser" desc="Survival_Build38LevelChooser">
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class="onlywhenactive"><a desc="Survival_Build35L0" href="?desc=Survival_Build35L0">诺克斯郡 <span class="badge">Build 35</span></a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>包含</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="NewDenver_20170424" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFallsv3" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="Otr_20170517_" data-toggle="button" id="layerOtr_20170517_">包含欧特</button>
-                                                    </a>
-                                                </li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Survival_Build35LevelChooser" desc="Survival_Build35LevelChooser">
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class="onlywhenactive"><a desc="Survival_b30L0" href="?desc=Survival_b30L0">诺克斯郡 <span class="badge">Build 30</span></a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <!-- <li class="disabled"><b>包含</b></li>
-													<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="Dreadwood" data-toggle="button" id="layerDreadwood">Overlay Dreadwood</button></a></li>
-													<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFalls" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button></a></li>
-													<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="New_Denver_v2_00" data-toggle="button" id="layerNewDenver">包含新丹佛</button></a></li>
-													<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="Rebuildv1" data-toggle="button" id="layerRebuildv1">Overlay Drayton (Rebuild)</button></a></li>
-													<li class=""><a><button type="button" class="btn-overlay btn w100 btn-info" desc="TWDPrisonv3" data-toggle="button" id="layerTWDPrisonv3">Overlay TWD Prison</button></a></li> -->
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Survival_b30LevelChooser" desc="Survival_b30LevelChooser">
-                                                            <option value="7">Level 7</option>
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class="onlywhenactive"><a desc="Survival_1xL0" href="?desc=Survival_1xL0">诺克斯郡 <span class="badge">1x tiles</span></a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>包含</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="Dreadwood" data-toggle="button" id="layerDreadwood">Overlay Dreadwood</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="BedfordFalls" data-toggle="button" id="layerBedfordFalls">包含贝德福德</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="New_Denver_v2_00" data-toggle="button" id="layerNewDenver">包含新丹佛</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="Rebuildv1" data-toggle="button" id="layerRebuildv1">Overlay Drayton (Rebuild)</button>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a>
-                                                        <button type="button" class="btn-overlay btn w100 btn-info" desc="TWDPrisonv3" data-toggle="button" id="layerTWDPrisonv3">Overlay TWD Prison</button>
-                                                    </a>
-                                                </li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Survival_1xLevelChooser" desc="Survival_1xLevelChooser">
-                                                            <option value="7">Level 7</option>
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="Challenge1L0" href="?desc=Challenge1L0">挑战地图 #1</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Challenge1LevelChooser" desc="Challenge1">
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="Challenge2L0" href="?desc=Challenge2L0">挑战地图 #2</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Challenge2LevelChooser" desc="Challenge2">
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="KnoxCounty0_v1L0" href="?desc=KnoxCounty0_v1L0">诺克斯郡 <span class="badge">0.1.5</span></a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="KnoxCountyLevelChooser" desc="KnoxCounty0_v1">
-                                                            <option value="7">Level 7</option>
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--}}}-->
-                        <div class="panel panel-default">
-                            <!--{{{ headingTwo-->
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-											社区地图
-										</a>
-									</h4>
-                            </div>
-                            <!-- panel-heading -->
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li class=""><a desc="BedfordFallsv3L0" href="?desc=BedfordFallsv3L0">Bedford Falls V3</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/6672-bedford-falls-test-v2/" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="BedfordFallsv3LevelChooser" desc="BedfordFallsv3">
-                                                            <option value="7">Level 7</option>
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="DreadwoodL0" href="?desc=DreadwoodL0">Dreadwood</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/7027-released-dreadwood-17/" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="DreadwoodLevelChooser" desc="Dreadwood">
-                                                            <option value="7">Level 7</option>
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="NewDenver_20170424L0" href="?desc=NewDenver_20170424L0">New Denver</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/12110-new-denver-" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="NewDenver_20170424LevelChooser" desc="NewDenver_20170424">
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="PhoenixL0" href="?desc=PhoenixL0">Phoenix</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/12312-released-phoenix" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="PhoenixLevelChooser" desc="Phoenix">
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="Radcliff0dot2L0" href="?desc=Radcliff0dot2L0">Radcliff v0.2</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/7250-community-project-radcliff-beta-released-v02/" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Radcliffv0dot2LevelChooser" desc="Radcliff0dot2">
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="Rebuildv1L0" href="?desc=Rebuildv1L0">Drayton (Rebuild) v1</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/13529-drayton-rebuild-v095/" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Rebuildv1LevelChooser" desc="Rebuildv1">
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="TWDPrisonv3L0" href="?desc=TWDPrisonv3L0">TWD Prison v3</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/6249-the-walking-dead-prison-v2-tv-show-updated/" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="TWDPrisonv3LevelChooser" desc="TWDPrisonv3">
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="VacationIslandPreAlpha1L0" href="?desc=VacationIslandPreAlpha1L0">Vacation Island Pre &alpha; 1</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="http://theindiestone.com/forums/index.php/topic/12359-vacation-islands-pre-alpha-1/" target="_blank">Source (PZ forum)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="VacationIslandPreAlpha1LevelChooser" desc="VacationIslandPreAlpha1">
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                        <li class=""><a desc="Otr_20170517_L0" href="?desc=Otr_20170517_L0">Over the River</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=926737806" target="_blank">Source (Workshop)</a></li>
-                                                <li class="disabled"><b>选择层级</b></li>
-                                                <li class="">
-                                                    <a>
-                                                        <select class="selectlevel" id="Otr_20170517LevelChooser" desc="Otr_20170517">
-                                                            <option value="7">Level 7</option>
-                                                            <option value="6">Level 6</option>
-                                                            <option value="5">5层</option>
-                                                            <option value="4">4层</option>
-                                                            <option value="3">3层</option>
-                                                            <option value="2">2层</option>
-                                                            <option value="1">1层</option>
-                                                            <option value="0" selected>0层</option>
-                                                        </select>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- panel -->
-                        <!--}}}-->
-                        <div class="panel panel-default">
-                            <!--{{{ headingFive-->
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-											存档地图
-										</a>
-									</h4>
-                            </div>
-                            <!-- panel-heading -->
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li class=""><a desc="Alexandria20150722L0" href="?desc=Alexandria20150722L0">Alexandria 2015-07-22</a>
-                                            <!--{{{-->
-                                            <ul class="nav onlywhenactive">
-                                                <li><a href="https://steamcommunity.com/groups/pzalexandria" target="_blank">Source (Steam community)</a></li>
-                                                <!--
-													<li class="disabled"><b>选择层级</b></li>
-													<li class=""><a><select class="selectlevel" id="Alexandria20150722LevelChooser" desc="Alexandria20150722">
-																<option value="7">Level 7</option>
-																<option value="6">Level 6</option>
-																<option value="5">5层</option>
-																<option value="4">4层</option>
-																<option value="3">3层</option>
-																<option value="2">2层</option>
-																<option value="1">1层</option>
-																<option value="0" selected>0层</option>
-															</select>
-														</a>
-													</li>
-													-->
-                                            </ul>
-                                        </li>
-                                        <!--}}}-->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- panel -->
-                        <!--}}}-->
-                        <div class="panel panel-default">
-                            <!--{{{ headingThree -->
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											地图坐标<br />(0层)
-										</a>
-									</h4>
-                            </div>
-                            <!-- panel-heading -->
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li class="">
-                                            <nobr>Coords: <a href="#" id='coords'>0x0</a></nobr>
-                                        </li>
-                                        <li class="">
-                                            <nobr>Cell: <a id='cellX'>0</a>x<a id='cellY'>0</a></nobr>
-                                        </li>
-                                        <li class="">
-                                            <nobr>Rel: <a id='relX'>0</a>x<a id='relY'>0</a></nobr>
-                                        </li>
-                                        <li class="">
-                                            <a>
-                                                <button id="btnLockCoords" data-toggle="button" class="btn-overlay btn w100 btn-info">Lock Coords</button>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--}}}-->
-                        <div class="panel panel-default">
-                            <!--{{{ headingFour-->
-                            <div class="panel-heading" role="tab" id="headingFour">
-                                <h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-											下载
-										</a>
-									</h4>
-                            </div>
-                            <!-- panel-heading -->
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li class=""><a id="btnDownloadBitTorrent">BitTorrent</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--}}}-->
-                    </div>
-                    <!-- panel-group -->
-                </div>
-                <!-- sidebar -->
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                    <div id='map'></div>
-                </div>
+          </div>
+          <!--}}}-->
+          <div class="panel panel-default">
+            <!--{{{ headingTwo-->
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  社区地图
+                </a>
+              </h4>
             </div>
+            <!-- panel-heading -->
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <ul class="nav">
+                  <li class=""><a desc="BedfordFallsv3L0" href="?desc=BedfordFallsv3L0">Bedford Falls V3</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/6672-bedford-falls-test-v2/" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="BedfordFallsv3LevelChooser" desc="BedfordFallsv3">
+                            <option value="7">Level 7</option>
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="DreadwoodL0" href="?desc=DreadwoodL0">Dreadwood</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/7027-released-dreadwood-17/" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="DreadwoodLevelChooser" desc="Dreadwood">
+                            <option value="7">Level 7</option>
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="NewDenver_20170424L0" href="?desc=NewDenver_20170424L0">New Denver</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/12110-new-denver-" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="NewDenver_20170424LevelChooser" desc="NewDenver_20170424">
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="PhoenixL0" href="?desc=PhoenixL0">Phoenix</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/12312-released-phoenix" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="PhoenixLevelChooser" desc="Phoenix">
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="Radcliff0dot2L0" href="?desc=Radcliff0dot2L0">Radcliff v0.2</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/7250-community-project-radcliff-beta-released-v02/" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Radcliffv0dot2LevelChooser" desc="Radcliff0dot2">
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="Rebuildv1L0" href="?desc=Rebuildv1L0">Drayton (Rebuild) v1</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/13529-drayton-rebuild-v095/" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Rebuildv1LevelChooser" desc="Rebuildv1">
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="TWDPrisonv3L0" href="?desc=TWDPrisonv3L0">TWD Prison v3</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/6249-the-walking-dead-prison-v2-tv-show-updated/" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="TWDPrisonv3LevelChooser" desc="TWDPrisonv3">
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="VacationIslandPreAlpha1L0" href="?desc=VacationIslandPreAlpha1L0">Vacation Island Pre &alpha; 1</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="http://theindiestone.com/forums/index.php/topic/12359-vacation-islands-pre-alpha-1/" target="_blank">Source (PZ forum)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="VacationIslandPreAlpha1LevelChooser" desc="VacationIslandPreAlpha1">
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                  <li class=""><a desc="Otr_20170517_L0" href="?desc=Otr_20170517_L0">Over the River</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=926737806" target="_blank">Source (Workshop)</a></li>
+                      <li class="disabled"><b>选择层级</b></li>
+                      <li class="">
+                        <a>
+                          <select class="selectlevel" id="Otr_20170517LevelChooser" desc="Otr_20170517">
+                            <option value="7">Level 7</option>
+                            <option value="6">Level 6</option>
+                            <option value="5">5层</option>
+                            <option value="4">4层</option>
+                            <option value="3">3层</option>
+                            <option value="2">2层</option>
+                            <option value="1">1层</option>
+                            <option value="0" selected>0层</option>
+                          </select>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- panel -->
+          <!--}}}-->
+          <div class="panel panel-default">
+            <!--{{{ headingFive-->
+            <div class="panel-heading" role="tab" id="headingFive">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  存档地图
+                </a>
+              </h4>
+            </div>
+            <!-- panel-heading -->
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body">
+                <ul class="nav">
+                  <li class=""><a desc="Alexandria20150722L0" href="?desc=Alexandria20150722L0">Alexandria 2015-07-22</a>
+                    <!--{{{-->
+                    <ul class="nav onlywhenactive">
+                      <li><a href="https://steamcommunity.com/groups/pzalexandria" target="_blank">Source (Steam community)</a></li>
+                      <!--
+<li class="disabled"><b>选择层级</b></li>
+<li class=""><a><select class="selectlevel" id="Alexandria20150722LevelChooser" desc="Alexandria20150722">
+      <option value="7">Level 7</option>
+      <option value="6">Level 6</option>
+      <option value="5">5层</option>
+      <option value="4">4层</option>
+      <option value="3">3层</option>
+      <option value="2">2层</option>
+      <option value="1">1层</option>
+      <option value="0" selected>0层</option>
+    </select>
+  </a>
+</li>
+-->
+                    </ul>
+                  </li>
+                  <!--}}}-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- panel -->
+          <!--}}}-->
+          <div class="panel panel-default">
+            <!--{{{ headingThree -->
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  地图坐标<br />(0层)
+                </a>
+              </h4>
+            </div>
+            <!-- panel-heading -->
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <ul class="nav">
+                  <li class="">
+                    <nobr>Coords: <a href="#" id='coords'>0x0</a></nobr>
+                  </li>
+                  <li class="">
+                    <nobr>Cell: <a id='cellX'>0</a>x<a id='cellY'>0</a></nobr>
+                  </li>
+                  <li class="">
+                    <nobr>Rel: <a id='relX'>0</a>x<a id='relY'>0</a></nobr>
+                  </li>
+                  <li class="">
+                    <a>
+                      <button id="btnLockCoords" data-toggle="button" class="btn-overlay btn w100 btn-info">Lock Coords</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--}}}-->
+          <div class="panel panel-default">
+            <!--{{{ headingFour-->
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  下载
+                </a>
+              </h4>
+            </div>
+            <!-- panel-heading -->
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                <ul class="nav">
+                  <li class=""><a id="btnDownloadBitTorrent">BitTorrent</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--}}}-->
         </div>
-
-        <div id="push"></div>
+        <!-- panel-group -->
+      </div>
+      <!-- sidebar -->
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div id='map'></div>
+      </div>
     </div>
+  </div>
 
-    <div id="footer" class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <button class="pull-right btn btn-danger" type="button" onclick="javascript:$('#footer').remove(); window.onresize();">
-                &times;
-            </button>
-            <a href='https://projectzomboid.com' target="_blank">Project Zomboid</a> Map Project
-            <span style="font-size: large;">|       汉化版项目地址: <a href='https://github.com/zlq4863947/pz-webmap' target="_blank">https://github.com/zlq4863947/pz-webmap</a></span>
-            <br> Contact: <a href="mailto:pzmap20130625@wegwerf.anderdonau.de">Benjamin 'blindcoder' Schieder</a> (<a target="_new" href="https://github.com/blind-coder">github.com</a> / <a target="_new" href="https://twitter.com/blind_coder">@blind_coder</a> / <a target="_new" href='http://www.benjamin-schieder.de/'>blog</a>)
-            <br />
-            <small>Built with <a target="_new" href="https://github.com/openseadragon/openseadragon/">OpenSeadragon</a>.</small>
-            </br />
-            <div class="socialshareprivacy" data-social-share-privacy='true'></div>
-        </div>
-    </div>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
-    <script type='text/javascript' src="plugins/bootstrap.min.js"></script>
-    <script type='text/javascript' src="plugins/docs.min.js"></script>
-    <script type='text/javascript' src="plugins/jstorage.js"></script>
-    <script type="application/javascript" src="pzmap.js"></script>
-    <script type="text/javascript" src="plugins/jquery/jquery.cookiebar.js"></script>
-    <!-- CookieBar -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $.cookieBar({
-                message: '我们使用Cookie跟踪使用情况和私有兴趣点'
-            });
+  <div id="push"></div>
+</div>
+
+<div id="footer" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <button class="pull-right btn btn-danger" type="button" onclick="javascript:$('#footer').remove(); window.onresize();">
+      &times;
+    </button>
+    <a href='https://projectzomboid.com' target="_blank">Project Zomboid</a> Map Project
+    <span style="font-size: large;">|       汉化版项目地址: <a href='https://github.com/zlq4863947/pz-webmap' target="_blank">https://github.com/zlq4863947/pz-webmap</a></span>
+    <br> Contact: <a href="mailto:pzmap20130625@wegwerf.anderdonau.de">Benjamin 'blindcoder' Schieder</a> (<a target="_new" href="https://github.com/blind-coder">github.com</a> / <a target="_new" href="https://twitter.com/blind_coder">@blind_coder</a> / <a target="_new" href='http://www.benjamin-schieder.de/'>blog</a>)
+    <br />
+    <small>Built with <a target="_new" href="https://github.com/openseadragon/openseadragon/">OpenSeadragon</a>.</small>
+    </br />
+    <div class="socialshareprivacy" data-social-share-privacy='true'></div>
+  </div>
+</div>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+<script type='text/javascript' src="plugins/bootstrap.min.js"></script>
+<script type='text/javascript' src="plugins/docs.min.js"></script>
+<script type='text/javascript' src="plugins/jstorage.js"></script>
+<script type="application/javascript" src="pzmap.js"></script>
+<script type="text/javascript" src="plugins/jquery/jquery.cookiebar.js"></script>
+<!-- CookieBar -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.cookieBar({
+            message: '我们使用Cookie跟踪使用情况和私有兴趣点'
         });
-    </script>
-    <!-- /End CookieBar -->
-    <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u = "https://piwik.anderdonau.de/";
-            _paq.push(['setTrackerUrl', u + 'piwik.php']);
-            _paq.push(['setSiteId', 1]);
-            var d = document,
-                g = d.createElement('script'),
-                s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = u + 'piwik.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-    </script>
-    <noscript>
-        <p><img src="https://piwik.anderdonau.de/piwik.php?idsite=1" style="border:0;" alt="" /></p>
-    </noscript>
-    <!-- End Piwik Code -->
-    <!-- SocialSharePrivacy -->
-    <script type="text/javascript">
-        (function() {
-            var s = document.createElement('script');
-            var t = document.getElementsByTagName('script')[0];
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = 'socialshareprivacy/jquery.socialshareprivacy.min.autoload.js';
-            t.parentNode.insertBefore(s, t);
-        })();
-    </script>
-    <!-- End SocialSharePrivacy -->
+    });
+</script>
+<!-- /End CookieBar -->
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "https://piwik.anderdonau.de/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<noscript>
+  <p><img src="https://piwik.anderdonau.de/piwik.php?idsite=1" style="border:0;" alt="" /></p>
+</noscript>
+<!-- End Piwik Code -->
+<!-- SocialSharePrivacy -->
+<script type="text/javascript">
+    (function() {
+        var s = document.createElement('script');
+        var t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'socialshareprivacy/jquery.socialshareprivacy.min.autoload.js';
+        t.parentNode.insertBefore(s, t);
+    })();
+</script>
+<!-- End SocialSharePrivacy -->
 </body>
 
 </html>
